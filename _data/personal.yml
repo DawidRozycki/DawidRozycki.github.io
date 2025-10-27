@@ -1,0 +1,15 @@
+name: "David Rozycki"
+tagline: "Data Scientist | Risk Management Specialist | Full Stack Developer"
+email: "your.email@example.com"
+location: "Zurich, Switzerland"
+summary: |
+  Experienced data scientist and risk management specialist with 6+ years in financial services, 
+  specializing in advanced analytics, risk modeling, and strategic decision support. Currently building 
+  innovative AI-powered platforms while leveraging deep expertise in Python, R, and financial mathematics.
+
+links:
+  resume_pdf: "#"
+  linkedin: "https://www.linkedin.com/in/david-rozycki-1766215a/"
+  github: "#"
+  website: "https://davidrozycki.github.io"
+  email: "mailto:your.email@example.com"

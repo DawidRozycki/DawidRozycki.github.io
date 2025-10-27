@@ -1,0 +1,57 @@
+current:
+  - name: "Nexly"
+    role: "Co-Founder & CTO"
+    status: "Active Development"
+    start_date: "January 2024"
+    description: "Innovative platform leveraging AI and data science expertise for [specific domain]"
+    technologies: ["React", "Next.js", "Python", "AI/ML", "PostgreSQL"]
+    highlights:
+      - "Architecting full-stack application from ground up"
+      - "Applying advanced analytics and machine learning techniques"
+      - "Leading technical strategy and infrastructure decisions"
+    links:
+      website: "#"
+      github: "#"
+
+  - name: "NextIdeas.app"
+    role: "Founder & Developer"
+    status: "Live"
+    start_date: "2024"
+    description: "AI-powered platform combining data science insights with modern web development"
+    technologies: ["Modern Web Stack", "AI/ML Integration", "Data Processing"]
+    highlights:
+      - "Solo development and product design"
+      - "Integrated AI/ML capabilities for enhanced UX"
+      - "Successfully launched and operational"
+    links:
+      website: "https://nextideas.app"
+      github: "#"
+
+notable:
+  - name: "IBOR Transition Risk Calculator"
+    company: "Standard Chartered Bank"
+    description: "Sophisticated risk measurement system for Risk-Free Rate products during industry-wide LIBOR transition"
+    technologies: ["Python", "Advanced Statistical Modeling", "Financial Mathematics"]
+    impact: "Successfully delivered critical infrastructure supporting bank's transition strategy"
+    year: "2020-2021"
+
+  - name: "Weather Sensitivity Risk Model"
+    company: "PGE Polska Grupa Energetyczna"
+    description: "Multiple regression model for calculating weather-sensitivity risk in energy portfolio"
+    technologies: ["Python", "Statistical Modeling", "Energy Market Analytics"]
+    impact: "Enabled new product development, attracted new clients, improved contract retention"
+    year: "2017-2018"
+
+  - name: "Gas-Turbine Optimization Tool"
+    company: "PGE Polska Grupa Energetyczna"
+    description: "Optimization algorithm for natural gas procurement strategy"
+    technologies: ["Python", "Operations Research", "Energy Trading Analytics"]
+    impact: "Generated savings of tens to hundreds of thousands PLN annually"
+    year: "2017-2018"
+
+  - name: "Executive Risk Reporting Framework"
+    company: "Credit Suisse"
+    description: "Automated RMarkdown reporting system with full IT infrastructure"
+    technologies: ["R", "RMarkdown", "DevOps", "Data Visualization"]
+    impact: "Streamlined senior leadership reporting, improved decision-making speed and accuracy"
+    year: "2022-2024"
