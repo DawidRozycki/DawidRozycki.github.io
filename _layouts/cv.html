@@ -1,0 +1,171 @@
+---
+layout: default
+---
+
+<div class="cv-container">
+  <header class="cv-header">
+    <h1>{{ site.data.personal.name }}</h1>
+    <p class="cv-tagline">{{ site.data.personal.tagline }}</p>
+    
+    {% if site.data.personal.summary %}
+    <div class="cv-summary">
+      <p>{{ site.data.personal.summary }}</p>
+    </div>
+    {% endif %}
+    
+    <div class="cv-links">
+      {% for link in site.data.personal.links %}
+        {% if link[1] != "#" and link[1] != "" %}
+          {% case link[0] %}
+            {% when 'resume_pdf' %}
+              <a href="{{ link[1] }}" class="cv-link" download>📄 Download PDF</a>
+            {% when 'linkedin' %}
+              <a href="{{ link[1] }}" class="cv-link">💼 LinkedIn</a>
+            {% when 'github' %}
+              <a href="{{ link[1] }}" class="cv-link">💻 GitHub</a>
+            {% when 'website' %}
+              <a href="{{ link[1] }}" class="cv-link">🌐 Website</a>
+            {% when 'email' %}
+              <a href="{{ link[1] }}" class="cv-link">✉️ Email</a>
+          {% endcase %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </header>
+
+  <div class="cv-content">
+    {{ content }}
+
+    <!-- Current Projects Section -->
+    {% if site.data.projects.current %}
+    <section class="projects-section">
+      <h2>Current Projects</h2>
+      {% for project in site.data.projects.current %}
+      <div class="project-card current-project">
+        <div class="project-header">
+          <h3 class="project-name">{{ project.name }}</h3>
+          <span class="project-role">{{ project.role }}</span>
+          <span class="project-status status-{{ project.status | slugify }}">{{ project.status }}</span>
+        </div>
+        <p class="project-description">{{ project.description }}</p>
+        <div class="project-highlights">
+          {% for highlight in project.highlights %}
+          <div class="highlight-item">{{ highlight }}</div>
+          {% endfor %}
+        </div>
+        <div class="technologies">
+          <strong>Technologies:</strong>
+          {% for tech in project.technologies %}
+          <span class="tech-tag">{{ tech }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+    {% endif %}
+
+    <!-- Professional Experience Section -->
+    <section class="experience-section">
+      <h2>Professional Experience</h2>
+      
+      {% for job in site.data.experience %}
+      <div class="experience-card">
+        <div class="experience-header">
+          <div class="company-info">
+            {% if job.logo %}
+            <img src="{{ job.logo }}" alt="{{ job.company }} logo" class="company-logo">
+            {% endif %}
+            <div class="company-details">
+              <h3 class="position-title">{{ job.position }}</h3>
+              <h4 class="company-name">{{ job.company }}</h4>
+              <div class="job-meta">
+                <span class="duration">{{ job.duration }}</span>
+                <span class="location">📍 {{ job.location }}</span>
+                <span class="type">{{ job.type }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% if job.note %}
+        <div class="job-note">
+          <em>{{ job.note }}</em>
+        </div>
+        {% endif %}
+
+        <div class="experience-content">
+          <div class="highlights">
+            {% for highlight in job.highlights %}
+            <div class="highlight-item">
+              <h5 class="highlight-title">{{ highlight.title }}</h5>
+              <p class="highlight-description">{{ highlight.description }}</p>
+              {% if highlight.impact %}
+              <div class="highlight-impact">
+                <strong>Impact:</strong> {{ highlight.impact }}
+              </div>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+
+          {% if job.technologies %}
+          <div class="technologies">
+            <strong>Technologies:</strong>
+            {% for tech in job.technologies %}
+            <span class="tech-tag">{{ tech }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+
+    <!-- Technical Skills Section -->
+    {% if site.data.skills.categories %}
+    <section class="skills-section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        {% for category in site.data.skills.categories %}
+        <div class="skill-category">
+          <h3 class="category-title">{{ category.icon }} {{ category.name }}</h3>
+          <div class="skills-list">
+            {% for skill in category.skills %}
+            <div class="skill-item">
+              <span class="skill-name">{{ skill.name }}</span>
+              <span class="skill-level level-{{ skill.level | slugify }}">{{ skill.level }}</span>
+              {% if skill.years %}<span class="skill-years">({{ skill.years }})</span>{% endif %}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- Notable Projects Section -->
+    {% if site.data.projects.notable %}
+    <section class="notable-projects-section">
+      <h2>Notable Projects</h2>
+      <div class="notable-projects-grid">
+        {% for project in site.data.projects.notable %}
+        <div class="notable-project-card">
+          <h3 class="project-name">{{ project.name }}</h3>
+          <div class="project-company">{{ project.company }} • {{ project.year }}</div>
+          <p class="project-description">{{ project.description }}</p>
+          <div class="project-impact">
+            <strong>Impact:</strong> {{ project.impact }}
+          </div>
+          <div class="technologies">
+            {% for tech in project.technologies %}
+            <span class="tech-tag">{{ tech }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+  </div>
+</div>
