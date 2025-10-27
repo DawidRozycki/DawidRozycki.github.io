@@ -7,72 +7,25 @@ title: Home
 
 I'm a [your role/title] passionate about building innovative solutions and contributing to meaningful projects.
 
----
+<div class="cards-container">
+  <div class="card">
+    <h2>My Involvement in Nexly</h2>
+    <p>Discover my role and contributions at Nexly, where I've been instrumental in [brief highlight of your work].</p>
+    <a href="/nexly" class="card-link">Learn More →</a>
+  </div>
 
-## My Involvement in Nexly
+  <div class="card">
+    <h2>Personal Projects & Achievements</h2>
+    <p>Explore my professional experience, skills, and portfolio of projects that showcase my expertise and growth.</p>
+    <a href="/projects" class="card-link">View Portfolio →</a>
+  </div>
 
-At Nexly, I've been instrumental in [describe your role and contributions]. 
-
-**Key Contributions:**
-- [Achievement or responsibility 1]
-- [Achievement or responsibility 2]
-- [Achievement or responsibility 3]
-
-[Add more details about your work, impact, and what Nexly does]
-
----
-
-## Personal Projects & Achievements
-
-### Professional Experience
-
-**[Job Title]** - [Company Name]  
-*[Date Range]*
-- [Responsibility or achievement]
-- [Responsibility or achievement]
-
-**[Job Title]** - [Company Name]  
-*[Date Range]*
-- [Responsibility or achievement]
-- [Responsibility or achievement]
-
-### Skills
-- **Programming Languages:** [List languages]
-- **Frameworks & Tools:** [List frameworks]
-- **Other Skills:** [List other relevant skills]
-
-### Education
-**[Degree]** - [University Name]  
-*[Date Range]*
-
-### Notable Projects
-- **[Project Name]:** [Brief description]
-- **[Project Name]:** [Brief description]
-- **[Project Name]:** [Brief description]
-
----
-
-## Creating NextIdeas.app
-
-NextIdeas.app is [describe what it is and its purpose].
-
-**The Vision:**  
-[Explain the problem you're solving and your vision for the app]
-
-**Key Features:**
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
-
-**Technology Stack:**
-- [Technology 1]
-- [Technology 2]
-- [Technology 3]
-
-**Current Status:**  
-[Describe the current state - in development, launched, etc.]
-
-[Visit NextIdeas.app](https://nextideas.app) *(if live)*
+  <div class="card">
+    <h2>Creating NextIdeas.app</h2>
+    <p>A deep dive into NextIdeas.app - the vision, technology, and journey of building this innovative solution.</p>
+    <a href="/nextideas" class="card-link">Read the Story →</a>
+  </div>
+</div>
 
 ---
 

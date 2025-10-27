@@ -1,7 +1,4 @@
----
----
-
-@import "minima";
+--- --- @import "minima";
 
 // Custom styles
 body {
@@ -13,6 +10,59 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+// Card styles for landing page
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #3498db;
+  }
+
+  h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: none;
+    font-size: 1.5em;
+  }
+
+  p {
+    color: #555;
+    margin: 15px 0 20px;
+  }
+
+  .card-link {
+    display: inline-block;
+    color: #3498db;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: #2980b9;
+    }
+  }
 }
 
 h1 {
@@ -37,7 +87,7 @@ h3 {
 a {
   color: #3498db;
   text-decoration: none;
-  
+
   &:hover {
     text-decoration: underline;
   }
@@ -55,4 +105,11 @@ ul {
 
 strong {
   color: #2c3e50;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
 }
