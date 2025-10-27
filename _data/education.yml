@@ -1,0 +1,28 @@
+# Add your education details here
+degrees:
+  - institution: "[University Name]"
+    degree: "[Your Degree]"
+    field: "[Field of Study]"
+    graduation_year: "[Year]"
+    location: "[City, Country]"
+    gpa: "[GPA if relevant]"
+    honors: []
+    relevant_coursework: []
+    thesis: ""
+
+certifications:
+  - name: "[Certification Name]"
+    issuer: "[Issuing Organization]"
+    date: "[Date]"
+    credential_id: "[ID if applicable]"
+    link: "[Verification link if applicable]"
+
+# Example structure - replace with your actual education
+# degrees:
+#   - institution: "University of Warsaw"
+#     degree: "Master of Science"
+#     field: "Financial Mathematics"
+#     graduation_year: "2017"
+#     location: "Warsaw, Poland"
+#     honors: ["Magna Cum Laude"]
+#     relevant_coursework: ["Advanced Statistics", "Risk Management", "Financial Modeling"]
