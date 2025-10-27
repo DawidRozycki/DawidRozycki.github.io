@@ -15,9 +15,9 @@ I'm a [your role/title] passionate about building innovative solutions and contr
   </div>
 
   <div class="card">
-    <h2>Personal Projects & Achievements</h2>
-    <p>Explore my professional experience, skills, and portfolio of projects that showcase my expertise and growth.</p>
-    <a href="/projects" class="card-link">View Portfolio →</a>
+    <h2>CV & Portfolio</h2>
+    <p>Explore my professional experience, technical skills, and portfolio of projects. View my complete resume and career journey.</p>
+    <a href="/projects" class="card-link">View CV →</a>
   </div>
 
   <div class="card">
