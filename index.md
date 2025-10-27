@@ -1,81 +1,94 @@
 ---
-layout: home
+layout: default
 title: Home
 ---
 
 # Welcome
 
-I'm a [your role/title] passionate about building innovative solutions and contributing to meaningful projects.
+I'm a backend developer and entrepreneur passionate about building scalable solutions and innovative products.
 
 ---
 
-## My Involvement in Nexly
+## Nexly - Co-Founder & Backend Developer
 
-At Nexly, I've been instrumental in [describe your role and contributions]. 
+As co-founder and backend developer at Nexly, I [describe what Nexly does and your role].
 
-**Key Contributions:**
-- [Achievement or responsibility 1]
-- [Achievement or responsibility 2]
-- [Achievement or responsibility 3]
+**My Role:**
+- [Your key responsibility 1]
+- [Your key responsibility 2]
+- [Your key responsibility 3]
 
-[Add more details about your work, impact, and what Nexly does]
+**Technical Contributions:**
+- [Technical achievement or system you built]
+- [Technical achievement or system you built]
+- [Technical achievement or system you built]
+
+**Impact:**
+- [Business or user impact metric]
+- [Business or user impact metric]
 
 ---
 
-## Personal Projects & Achievements
+## Curriculum Vitae
 
 ### Professional Experience
 
-**[Job Title]** - [Company Name]  
-*[Date Range]*
-- [Responsibility or achievement]
-- [Responsibility or achievement]
+**Co-Founder & Backend Developer** - Nexly  
+*[Start Date] - Present*
+- [Key responsibility or achievement]
+- [Key responsibility or achievement]
+- [Key responsibility or achievement]
 
-**[Job Title]** - [Company Name]  
+**[Previous Role]** - [Previous Company]  
 *[Date Range]*
-- [Responsibility or achievement]
-- [Responsibility or achievement]
+- [Key responsibility or achievement]
+- [Key responsibility or achievement]
 
-### Skills
-- **Programming Languages:** [List languages]
-- **Frameworks & Tools:** [List frameworks]
-- **Other Skills:** [List other relevant skills]
+### Technical Skills
+- **Backend:** [Languages/frameworks - e.g., Node.js, Python, Go]
+- **Databases:** [e.g., PostgreSQL, MongoDB, Redis]
+- **Infrastructure:** [e.g., AWS, Docker, Kubernetes]
+- **Other:** [APIs, microservices, etc.]
 
 ### Education
-**[Degree]** - [University Name]  
-*[Date Range]*
+**[Degree]** - [University]  
+*[Year]*
 
-### Notable Projects
-- **[Project Name]:** [Brief description]
-- **[Project Name]:** [Brief description]
-- **[Project Name]:** [Brief description]
+### Achievements
+- [Notable achievement or award]
+- [Notable achievement or award]
+- [Notable achievement or award]
 
 ---
 
-## Creating NextIdeas.app
+## NextIdeas.app
 
-NextIdeas.app is [describe what it is and its purpose].
+NextIdeas.app is [describe what it is - e.g., a platform for capturing and organizing ideas].
 
-**The Vision:**  
-[Explain the problem you're solving and your vision for the app]
+**The Problem:**  
+[What problem does it solve?]
+
+**The Solution:**  
+[How does NextIdeas.app solve it?]
 
 **Key Features:**
 - [Feature 1]
 - [Feature 2]
 - [Feature 3]
 
-**Technology Stack:**
+**Built With:**
 - [Technology 1]
 - [Technology 2]
 - [Technology 3]
 
-**Current Status:**  
-[Describe the current state - in development, launched, etc.]
+**Status:** [In development / Beta / Live]
 
-[Visit NextIdeas.app](https://nextideas.app) *(if live)*
+[Visit NextIdeas.app →](https://nextideas.app)
 
 ---
 
-## Get in Touch
+## Contact
 
-Feel free to reach out to me at [your.email@example.com](mailto:your.email@example.com) or connect with me on [LinkedIn](https://linkedin.com/in/yourprofile).
+📧 [your.email@example.com](mailto:your.email@example.com)  
+💼 [LinkedIn](https://linkedin.com/in/yourprofile)  
+🐙 [GitHub](https://github.com/yourusername)

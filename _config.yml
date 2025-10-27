@@ -9,7 +9,7 @@ url: "https://yourusername.github.io"
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-minimal
 
 # Social links (optional)
 github_username: yourusername
