@@ -1,15 +1,23 @@
 name: "David Rozycki"
-tagline: "Data Scientist | Risk Management Specialist | Full Stack Developer"
-email: "your.email@example.com"
+tagline: "Backend Developer | Co-Founder | Entrepreneur | Data Scientist"
+email: "rozyckd@gmail.com"
 location: "Zurich, Switzerland"
 summary: |
-  Experienced data scientist and risk management specialist with 6+ years in financial services, 
-  specializing in advanced analytics, risk modeling, and strategic decision support. Currently building 
-  innovative AI-powered platforms while leveraging deep expertise in Python, R, and financial mathematics.
+  Backend developer and entrepreneur passionate about building scalable solutions and innovative products. 
+  Co-founder of Nexly, where I architect and build the entire backend infrastructure. Specialized in 
+  backend development, system architecture, and creating high-impact technical solutions.
 
+# Social profiles
+github_username: "DawidRozycki"
+github_nexly: "davidRozycki"
+github_nextideas: "dr-next357"
+linkedin_username: "david-rozycki-1766215a"
+twitter_username: ""
+
+# Links
 links:
-  resume_pdf: "/assets/files/David_Rozycki_CV.pdf"
+  resume_pdf: "/assets/files/David Rozycki CV.pdf"
   linkedin: "https://www.linkedin.com/in/david-rozycki-1766215a/"
-  github: "#"
-  website: "https://davidrozycki.github.io"
-  email: "mailto:your.email@example.com"
+  github: "https://github.com/DawidRozycki"
+  website: "https://dawidrozycki.github.io"
+  email: "mailto:rozyckd@gmail.com"

@@ -26,21 +26,21 @@
         <div class="contact-info">
           <h3>Contact</h3>
           <p>
-            📧 <a href="mailto:{{ site.email }}">Email</a>
+            📧 <a href="mailto:{{ site.data.personal.email }}">Email</a>
           </p>
-          {% if site.linkedin_username %}
+          {% if site.data.personal.linkedin_username %}
           <p>
-            💼 <a href="https://linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
-          </p>
-          {% endif %}
-          {% if site.github_username %}
-          <p>
-            🐙 <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+            💼 <a href="https://linkedin.com/in/{{ site.data.personal.linkedin_username }}">LinkedIn</a>
           </p>
           {% endif %}
-          {% if site.twitter_username %}
+          {% if site.data.personal.github_username %}
           <p>
-            🐦 <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+            🐙 <a href="https://github.com/{{ site.data.personal.github_username }}">GitHub</a>
+          </p>
+          {% endif %}
+          {% if site.data.personal.twitter_username and site.data.personal.twitter_username != "" %}
+          <p>
+            🐦 <a href="https://twitter.com/{{ site.data.personal.twitter_username }}">Twitter</a>
           </p>
           {% endif %}
         </div>

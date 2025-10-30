@@ -7,7 +7,7 @@ title: NextIdeas.app
 
 # NextIdeas.app
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=dr-next357&show_icons=true&theme=default&hide_border=true)](https://github.com/dr-next357)
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username={{ site.data.personal.github_nextideas }}&show_icons=true&theme=default&hide_border=true)](https://github.com/{{ site.data.personal.github_nextideas }})
 
 ## Overview
 
