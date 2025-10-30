@@ -15,6 +15,27 @@
 
         <p class="tagline">{{ site.data.personal.tagline | default: site.description }}</p>
 
+        {% if site.data.personal.summary %}
+        <div class="sidebar-summary">
+          <p>{{ site.data.personal.summary }}</p>
+        </div>
+        {% endif %}
+
+        <div class="sidebar-links">
+          {% if site.data.personal.links.resume_pdf %}
+            <a href="{{ site.data.personal.links.resume_pdf }}" class="sidebar-link" download>📄 Download PDF</a>
+          {% endif %}
+          {% if site.data.personal.links.linkedin %}
+            <a href="{{ site.data.personal.links.linkedin }}" class="sidebar-link" target="_blank">💼 LinkedIn</a>
+          {% endif %}
+          {% if site.data.personal.links.github %}
+            <a href="{{ site.data.personal.links.github }}" class="sidebar-link" target="_blank">💻 GitHub</a>
+          {% endif %}
+          {% if site.data.personal.links.email %}
+            <a href="{{ site.data.personal.links.email }}" class="sidebar-link">✉️ Email</a>
+          {% endif %}
+        </div>
+
         <div class="contact-info">
           <h3>Contact</h3>
           <p>
@@ -25,58 +46,9 @@
             📍 {{ site.data.personal.location }}
           </p>
           {% endif %}
-          {% if site.data.personal.links.linkedin %}
-          <p>
-            💼 <a href="{{ site.data.personal.links.linkedin }}" target="_blank">LinkedIn</a>
-          </p>
-          {% endif %}
-          {% if site.data.personal.links.github %}
-          <p>
-            💻 <a href="{{ site.data.personal.links.github }}" target="_blank">GitHub</a>
-          </p>
-          {% endif %}
-          {% if site.data.personal.twitter_username and site.data.personal.twitter_username != "" %}
-          <p>
-            🐦 <a href="https://twitter.com/{{ site.data.personal.twitter_username }}" target="_blank">Twitter</a>
-          </p>
-          {% endif %}
-          {% if site.data.personal.links.resume_pdf %}
-          <p style="margin-top: 20px;">
-            <a href="{{ site.data.personal.links.resume_pdf }}" class="download-cv-btn" download>📄 Download CV</a>
-          </p>
-          {% endif %}
         </div>
       </header>
       <section>
-
-      <div class="page-header">
-        <h1>{{ site.data.personal.name }}</h1>
-        <p class="page-tagline">{{ site.data.personal.tagline }}</p>
-        
-        {% if site.data.personal.summary %}
-        <div class="page-summary">
-          <p>{{ site.data.personal.summary }}</p>
-        </div>
-        {% endif %}
-        
-        <div class="page-links">
-          {% if site.data.personal.links.resume_pdf %}
-            <a href="{{ site.data.personal.links.resume_pdf }}" class="page-link" download>📄 Download PDF</a>
-          {% endif %}
-          {% if site.data.personal.links.linkedin %}
-            <a href="{{ site.data.personal.links.linkedin }}" class="page-link" target="_blank">💼 LinkedIn</a>
-          {% endif %}
-          {% if site.data.personal.links.github %}
-            <a href="{{ site.data.personal.links.github }}" class="page-link" target="_blank">💻 GitHub</a>
-          {% endif %}
-          {% if site.data.personal.links.website %}
-            <a href="{{ site.data.personal.links.website }}" class="page-link" target="_blank">🌐 Website</a>
-          {% endif %}
-          {% if site.data.personal.links.email %}
-            <a href="{{ site.data.personal.links.email }}" class="page-link">✉️ Email</a>
-          {% endif %}
-        </div>
-      </div>
 
 <p><a href="/">← Back to Home</a></p>
 
