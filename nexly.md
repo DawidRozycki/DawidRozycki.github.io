@@ -13,9 +13,17 @@ title: Nexly
 
 <div style="text-align: center; margin: 20px 0;">
   <a href="https://github.com/davidRozycki">
-    <img src="https://ghchart.rshah.org/3498db/davidRozycki" alt="GitHub Contribution Grid" style="max-width: 100%; height: auto;">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=davidRozycki&theme=default&hide_border=true" alt="GitHub Contribution Stats" style="max-width: 100%; height: auto;">
   </a>
 </div>
+
+**Development Activity:**
+- 🚀 **300+ contributions** in 2024
+- 🚀 **500+ contributions** in 2025
+- ✅ **Hundreds of Jira tasks** completed, pull requests authored and reviewed
+- 🎯 **Dozens of features** shipped to production
+
+---
 
 ## Overview
 
