@@ -25,42 +25,52 @@
     {{ content }}
 
     <!-- Current Projects Section -->
-    {% if site.data.projects.current %}
-    <section class="projects-section">
+    {% assign current_projects = site.data.experience | where: "is_current_project", true %}
+    {% if current_projects.size > 0 %}
+    <section class="experience-section">
       <h2>Current Projects</h2>
-      {% for project in site.data.projects.current %}
-      <div class="project-card current-project">
-        <div class="project-header">
+      {% for project in current_projects %}
+      <div class="experience-card">
+        <div class="experience-header">
           <div class="company-info">
             {% if project.logo %}
-            <img src="{{ project.logo }}" alt="{{ project.name }} logo" class="company-logo">
+            <img src="{{ project.logo }}" alt="{{ project.company }} logo" class="company-logo">
             {% endif %}
             <div class="company-details">
-              <h3 class="project-name">{{ project.name }}</h3>
-              <div class="project-meta">
-                <span class="project-role">{{ project.role }}</span>
-                <span class="project-status status-{{ project.status | slugify }}">{{ project.status }}</span>
+              <h3 class="position-title">{{ project.position }}</h3>
+              <h4 class="company-name">{{ project.company }}</h4>
+              <div class="job-meta">
+                <span class="duration">{{ project.duration }}</span>
+                {% if project.status %}
+                <span class="type" style="{% if project.status == 'Active Development' %}background: #f39c12;{% elsif project.status == 'Live' %}background: #27ae60;{% endif %} color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.9em;">{{ project.status }}</span>
+                {% endif %}
               </div>
             </div>
           </div>
         </div>
-        <p class="project-description">{{ project.description }}</p>
-        <div class="project-highlights">
-          {% for highlight in project.highlights %}
-          <div class="highlight-item">{{ highlight }}</div>
-          {% endfor %}
-        </div>
-        <div class="technologies">
-          <strong>Technologies:</strong>
-          {% for tech in project.technologies %}
-          {% if tech.highlight %}
-          <span class="tech-tag tech-tag-highlight">{{ tech.name }}</span>
-          {% elsif tech.name %}
-          <span class="tech-tag">{{ tech.name }}</span>
-          {% else %}
-          <span class="tech-tag">{{ tech }}</span>
+
+        <div class="experience-content">
+          <div class="highlights">
+            {% for highlight in project.highlights %}
+            <div class="highlight-item">
+              <h5 class="highlight-title">{{ highlight.title }}</h5>
+              <p class="highlight-description">{{ highlight.description }}</p>
+            </div>
+            {% endfor %}
+          </div>
+
+          {% if project.technologies %}
+          <div class="technologies">
+            <strong>Technologies:</strong>
+            {% for tech in project.technologies %}
+            {% if project.tech_highlights contains tech %}
+            <span class="tech-tag tech-tag-highlight">{{ tech }}</span>
+            {% else %}
+            <span class="tech-tag">{{ tech }}</span>
+            {% endif %}
+            {% endfor %}
+          </div>
           {% endif %}
-          {% endfor %}
         </div>
       </div>
       {% endfor %}

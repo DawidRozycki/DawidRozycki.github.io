@@ -1,3 +1,45 @@
+- company: "Nexly"
+  position: "Co-Founder & Backend Developer"
+  location: "Zurich, Switzerland"
+  duration: "September 2024 - Present"
+  duration_short: "1 yr+"
+  type: "Full-time"
+  logo: "/assets/images/nexly_logo_full.png"
+  status: "Active Development"
+  website: "https://nexly.tech/"
+  is_current_project: true
+  technologies: ["Python", "AI", "MS Azure", "Google GCP", "Firebase", "React", "Next.js"]
+  tech_highlights: ["Python", "AI", "MS Azure", "Google GCP", "Firebase"]
+  highlights:
+    - title: "Backend Architecture"
+      description: "Architected the entire backend infrastructure from ground up, creating scalable systems that serve our growing user base"
+    - title: "AI-Powered Features"
+      description: "Built core features including AI chat, intelligent connections, and market analysis leveraging advanced machine learning techniques"
+    - title: "Technical Leadership"
+      description: "Leading technical strategy and infrastructure decisions, applying data science expertise to create innovative solutions"
+    - title: "Platform Scaling"
+      description: "Scaled the platform to handle [X] users while maintaining performance and reliability"
+
+- company: "NextIdeas.app"
+  position: "Solo-Founder"
+  location: "Remote"
+  duration: "September 2025 - Present"
+  duration_short: "3 months+"
+  type: "Full-time"
+  logo: "/assets/images/nextideas_logo.png"
+  status: "Live"
+  website: "https://nextideas.app"
+  is_current_project: true
+  technologies: ["Python", "AI", "DigitalOcean", "Gradient", "Data Processing", "Modern Web Stack"]
+  tech_highlights: ["Python", "AI", "DigitalOcean", "Gradient", "Data Processing", "Modern Web Stack"]
+  highlights:
+    - title: "Solo Development"
+      description: "Solo development and product design, building the entire platform from concept to launch"
+    - title: "AI Integration"
+      description: "Integrated AI/ML capabilities for enhanced UX, leveraging modern machine learning techniques"
+    - title: "Production Launch"
+      description: "Successfully launched and operational, serving users with a robust and scalable platform"
+
 - company: "Credit Suisse"
   position: "Data Analyst / Data Scientist"
   location: "Zurich, Switzerland"

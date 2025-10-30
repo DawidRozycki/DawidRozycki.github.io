@@ -10,15 +10,19 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
 <section class="experience-section">
   <h2>Current Projects</h2>
   
+  {% assign nexly = site.data.experience | where: "company", "Nexly" | first %}
   <div class="experience-card">
     <div class="experience-header">
       <div class="company-info">
-        <img src="assets/images/nexly_logo_full.png" alt="Nexly logo" class="company-logo">
+        <img src="{{ nexly.logo }}" alt="{{ nexly.company }} logo" class="company-logo">
         <div class="company-details">
-          <h3 class="position-title">Co-Founder & CTO</h3>
-          <h4 class="company-name">Nexly</h4>
+          <h3 class="position-title">{{ nexly.position }}</h3>
+          <h4 class="company-name">{{ nexly.company }}</h4>
           <div class="job-meta">
-            <span class="type status-active-development" style="background: #f39c12; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.9em;">Active Development</span>
+            <span class="duration">{{ nexly.duration }}</span>
+            {% if nexly.status %}
+            <span class="type" style="background: #f39c12; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.9em;">{{ nexly.status }}</span>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -30,50 +34,49 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
     </video>
     
     <div class="experience-content">
-      <p>As co-founder and backend developer at Nexly, I've been instrumental in building the technical foundation and core features that power the platform. I lead the backend architecture and development, creating scalable systems that serve our growing user base.</p>
-      
       <div class="highlights">
+        {% for highlight in nexly.highlights %}
         <div class="highlight-item">
-          <p class="highlight-description">• Architected the entire backend infrastructure</p>
+          <h5 class="highlight-title">{{ highlight.title }}</h5>
+          <p class="highlight-description">{{ highlight.description }}</p>
         </div>
-        <div class="highlight-item">
-          <p class="highlight-description">• Built core features including AI chat, intelligent connections, and market analysis</p>
-        </div>
-        <div class="highlight-item">
-          <p class="highlight-description">• Scaled the platform to handle [X] users</p>
-        </div>
+        {% endfor %}
       </div>
       
       <div class="technologies">
         <strong>Technologies:</strong>
-        <span class="tech-tag tech-tag-highlight">Python</span>
-        <span class="tech-tag tech-tag-highlight">AI</span>
-        <span class="tech-tag tech-tag-highlight">MS Azure</span>
-        <span class="tech-tag tech-tag-highlight">Google GCP</span>
-        <span class="tech-tag tech-tag-highlight">Firebase</span>
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">Next.js</span>
+        {% for tech in nexly.technologies %}
+        {% if tech == "Python" or tech == "AI" or tech == "MS Azure" or tech == "Google GCP" or tech == "Firebase" %}
+        <span class="tech-tag tech-tag-highlight">{{ tech }}</span>
+        {% else %}
+        <span class="tech-tag">{{ tech }}</span>
+        {% endif %}
+        {% endfor %}
       </div>
       
       <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
         <strong>🔗 Links:</strong>
         <div style="margin-top: 10px; display: flex; gap: 15px; flex-wrap: wrap;">
           <a href="/nexly" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">📖 Learn More</a>
-          <a href="#" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">🌐 Visit Nexly</a>
+          <a href="{{ nexly.website }}" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">🌐 Visit Nexly</a>
         </div>
       </div>
     </div>
   </div>
   
+  {% assign nextideas = site.data.experience | where: "company", "NextIdeas.app" | first %}
   <div class="experience-card">
     <div class="experience-header">
       <div class="company-info">
-        <img src="assets/images/nextideas_logo.png" alt="NextIdeas logo" class="company-logo">
+        <img src="{{ nextideas.logo }}" alt="{{ nextideas.company }} logo" class="company-logo">
         <div class="company-details">
-          <h3 class="position-title">Founder & Developer</h3>
-          <h4 class="company-name">NextIdeas.app</h4>
+          <h3 class="position-title">{{ nextideas.position }}</h3>
+          <h4 class="company-name">{{ nextideas.company }}</h4>
           <div class="job-meta">
-            <span class="type status-live" style="background: #27ae60; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.9em;">Live</span>
+            <span class="duration">{{ nextideas.duration }}</span>
+            {% if nextideas.status %}
+            <span class="type" style="background: #27ae60; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.9em;">{{ nextideas.status }}</span>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -84,35 +87,31 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
     </div>
     
     <div class="experience-content">
-      <p>NextIdeas.app is [brief description - e.g., a platform for capturing, organizing, and developing ideas into actionable projects]. Built to solve the problem of [what problem it solves], it provides [key value proposition].</p>
-      
       <div class="highlights">
+        {% for highlight in nextideas.highlights %}
         <div class="highlight-item">
-          <p class="highlight-description">• Solo development and product design</p>
+          <h5 class="highlight-title">{{ highlight.title }}</h5>
+          <p class="highlight-description">{{ highlight.description }}</p>
         </div>
-        <div class="highlight-item">
-          <p class="highlight-description">• Integrated AI/ML capabilities for enhanced UX</p>
-        </div>
-        <div class="highlight-item">
-          <p class="highlight-description">• Successfully launched and operational</p>
-        </div>
+        {% endfor %}
       </div>
       
       <div class="technologies">
         <strong>Technologies:</strong>
-        <span class="tech-tag tech-tag-highlight">Python</span>
-        <span class="tech-tag tech-tag-highlight">AI</span>
-        <span class="tech-tag tech-tag-highlight">DigitalOcean</span>
-        <span class="tech-tag tech-tag-highlight">Gradient</span>
-        <span class="tech-tag tech-tag-highlight">Data Processing</span>
-        <span class="tech-tag tech-tag-highlight">Modern Web Stack</span>
+        {% for tech in nextideas.technologies %}
+        {% if nextideas.tech_highlights contains tech %}
+        <span class="tech-tag tech-tag-highlight">{{ tech }}</span>
+        {% else %}
+        <span class="tech-tag">{{ tech }}</span>
+        {% endif %}
+        {% endfor %}
       </div>
       
       <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
         <strong>🔗 Links:</strong>
         <div style="margin-top: 10px; display: flex; gap: 15px; flex-wrap: wrap;">
           <a href="/nextideas" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">📖 Learn More</a>
-          <a href="https://nextideas.app" target="_blank" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">🌐 Visit NextIdeas.app</a>
+          <a href="{{ nextideas.website }}" target="_blank" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">🌐 Visit NextIdeas.app</a>
         </div>
       </div>
     </div>

@@ -5,10 +5,6 @@ title: Nexly
 
 [← Back to Home](/)
 
-<div style="text-align: center; margin: 30px 0;">
-  <img src="assets/images/nexly_logo_full.png" alt="Nexly Logo" style="max-width: 400px; height: auto;">
-</div>
-
 # Nexly - Co-Founder & Backend Developer
 
 <div style="text-align: center; margin: 20px 0;">
