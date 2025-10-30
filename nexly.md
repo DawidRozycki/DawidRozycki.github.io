@@ -3,7 +3,7 @@ layout: default
 title: Nexly
 ---
 
-[← Back to Home](/)
+{% include back_to_home.html %}
 
 # Nexly - Co-Founder & Backend Developer
 
@@ -39,51 +39,100 @@ Nexly is [describe what Nexly does - e.g., a platform that helps businesses...].
 
 ## Features
 
-### AI Chat
-
-<video width="100%" controls>
-  <source src="assets/videos/nexly_ai_chat.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-[Describe the AI chat feature - what it does, how it helps users, the technology behind it]
-
-**Key capabilities:**
-- [Capability 1]
-- [Capability 2]
-- [Capability 3]
-
----
-
-### Intelligent Connections
-
-<video width="100%" controls>
-  <source src="assets/videos/nexly_ic.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-[Describe the intelligent connections feature - how it works, what problems it solves]
-
-**Key capabilities:**
-- [Capability 1]
-- [Capability 2]
-- [Capability 3]
-
----
-
-### Market Analysis
-
-<video width="100%" controls>
-  <source src="assets/videos/nexly_ma.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-[Describe the market analysis feature - what insights it provides, how it helps users make decisions]
-
-**Key capabilities:**
-- [Capability 1]
-- [Capability 2]
-- [Capability 3]
+<section class="experience-section">
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="company-info">
+        <div class="company-details">
+          <h3 class="position-title">AI Chat</h3>
+        </div>
+      </div>
+    </div>
+    
+    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
+      <source src="assets/videos/nexly_ai_chat.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="experience-content">
+      <p>[Describe the AI chat feature - what it does, how it helps users, the technology behind it]</p>
+      
+      <div class="highlights">
+        <div class="highlight-item">
+          <p class="highlight-description">• [Capability 1]</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• [Capability 2]</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• [Capability 3]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="company-info">
+        <div class="company-details">
+          <h3 class="position-title">Intelligent Connections</h3>
+        </div>
+      </div>
+    </div>
+    
+    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
+      <source src="assets/videos/nexly_ic.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="experience-content">
+      <p>[Describe the intelligent connections feature - how it works, what problems it solves]</p>
+      
+      <div class="highlights">
+        <div class="highlight-item">
+          <p class="highlight-description">• [Capability 1]</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• [Capability 2]</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• [Capability 3]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="company-info">
+        <div class="company-details">
+          <h3 class="position-title">Market Analysis</h3>
+        </div>
+      </div>
+    </div>
+    
+    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
+      <source src="assets/videos/nexly_ma.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="experience-content">
+      <p>[Describe the market analysis feature - what insights it provides, how it helps users make decisions]</p>
+      
+      <div class="highlights">
+        <div class="highlight-item">
+          <p class="highlight-description">• [Capability 1]</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• [Capability 2]</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• [Capability 3]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 ---
 
@@ -133,4 +182,4 @@ As co-founder and backend developer, I've been responsible for:
 
 ---
 
-[← Back to Home](/)
+{% include back_to_home.html %}

@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Welcome
+# 👋 Hey!
 
 I'm a backend developer and entrepreneur passionate about building scalable solutions and innovative products.
 

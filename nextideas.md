@@ -3,7 +3,7 @@ layout: default
 title: NextIdeas.app
 ---
 
-[← Back to Home](/)
+{% include back_to_home.html %}
 
 <div style="text-align: center; margin: 20px 0;">
   <img src="assets/images/nextideas_logo.png" alt="NextIdeas Logo" style="max-width: 300px; height: auto;">
@@ -154,4 +154,4 @@ NextIdeas.app is [detailed description of what it is - e.g., a comprehensive pla
 
 ---
 
-[← Back to Home](/)
+{% include back_to_home.html %}
