@@ -4,7 +4,7 @@
   duration: "April 2022 - August 2024"
   duration_short: "2 yrs 5 mos"
   type: "Full-time"
-  logo: "/assets/images/credit-suisse-logo.png" # Add logo later
+  logo: "/assets/images/credit_suisse_logo.jpeg"
   technologies: ["R", "Python", "RMarkdown", "Git", "Risk Analytics", "Data Visualization"]
   highlights:
     - title: "Custom Analytics Development"
@@ -22,7 +22,7 @@
   duration: "May 2020 - December 2021"
   duration_short: "1 yr 8 mos"
   type: "Full-time"
-  logo: "/assets/images/standard-chartered-logo.png"
+  logo: "/assets/images/standardchartered_logo.jpeg"
   technologies: ["Python", "R", "Statistical Modeling", "Risk Analytics", "Financial Mathematics"]
   highlights:
     - title: "IBOR Transition Leadership"
@@ -38,7 +38,7 @@
   duration: "May 2018 - April 2020"
   duration_short: "2 yrs"
   type: "Full-time"
-  logo: "/assets/images/pko-logo.png"
+  logo: "/assets/images/pko_bp_logo.jpeg"
   technologies: ["Python", "R", "Risk Management", "Market Analytics"]
   highlights:
     - title: "Market Risk Analysis"
@@ -54,7 +54,7 @@
   duration: "February 2017 - May 2018"
   duration_short: "1 yr 4 mos"
   type: "Full-time"
-  logo: "/assets/images/pge-logo.png"
+  logo: "/assets/images/grupapge_logo.jpeg"
   technologies: ["Python", "VBA", "Statistical Modeling", "Energy Markets Analytics", "Risk Management"]
   note: "EDF Poland was acquired by PGE and formed PGE - Energia Ciepla in November 2017"
   highlights:

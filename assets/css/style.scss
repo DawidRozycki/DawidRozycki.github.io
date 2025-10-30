@@ -116,6 +116,29 @@ section {
     float: none;
     margin-top: 20px;
   }
+  
+  .wrapper {
+    width: 95%;
+    padding: 0 10px;
+  }
+  
+  .experience-card, .project-card {
+    padding: 20px;
+  }
+  
+  .company-info {
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+    
+    .company-logo {
+      margin-bottom: 15px;
+    }
+  }
+  
+  .job-meta {
+    justify-content: center;
+  }
 }
 
 h1 {
@@ -179,10 +202,17 @@ video {
 .github-stats-badge {
   margin: 20px 0;
   text-align: center;
+  overflow: hidden;
+  
+  a {
+    display: block;
+  }
   
   img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -390,8 +420,12 @@ video {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   gap: 25px;
+  
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .skill-category {
@@ -457,8 +491,12 @@ video {
 
 .notable-projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: 1fr;
   gap: 25px;
+  
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .notable-project-card {

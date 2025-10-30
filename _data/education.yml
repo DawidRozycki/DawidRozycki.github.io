@@ -1,28 +1,32 @@
-# Add your education details here
 degrees:
-  - institution: "[University Name]"
-    degree: "[Your Degree]"
-    field: "[Field of Study]"
-    graduation_year: "[Year]"
-    location: "[City, Country]"
-    gpa: "[GPA if relevant]"
-    honors: []
-    relevant_coursework: []
-    thesis: ""
+  - institution: "SGH Warsaw School of Economics"
+    degree: "Master's degree"
+    field: "Accounting and Finance"
+    duration: "2013 - 2015"
+    logo: ""
+    
+  - institution: "University of Warsaw"
+    degree: "Post-graduate"
+    field: "Data Science, business applications of R programming"
+    duration: "2017 - 2018"
+    logo: ""
+    
+  - institution: "Cracow University of Technology"
+    degree: "Engineer's degree (equivalent to Bachelor's degree)"
+    field: "Energy Management and Systems Technology/Technician"
+    duration: "2009 - 2013"
+    gpa: "5.0"
+    logo: ""
+    activities: 
+      - "Energetics study group member"
+      - "Class group senior"
+    thesis: "Operating profit analysis of photovoltaic cells in respect to their type and location of application"
+    honors:
+      - "Honor-roll student"
+      - "High grade-point average for full 7 semester engineering course"
 
 certifications:
-  - name: "[Certification Name]"
-    issuer: "[Issuing Organization]"
-    date: "[Date]"
-    credential_id: "[ID if applicable]"
-    link: "[Verification link if applicable]"
-
-# Example structure - replace with your actual education
-# degrees:
-#   - institution: "University of Warsaw"
-#     degree: "Master of Science"
-#     field: "Financial Mathematics"
-#     graduation_year: "2017"
-#     location: "Warsaw, Poland"
-#     honors: ["Magna Cum Laude"]
-#     relevant_coursework: ["Advanced Statistics", "Risk Management", "Financial Modeling"]
+  - name: "CFA Level 1"
+    issuer: "CFA Institute"
+    date: "December 2013"
+    status: "Passed"
