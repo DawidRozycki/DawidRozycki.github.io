@@ -5,9 +5,13 @@ title: Nexly
 
 [← Back to Home](/)
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="assets/images/nexly_logo_full.png" alt="Nexly Logo" style="max-width: 400px; height: auto;">
+</div>
+
 # Nexly - Co-Founder & Backend Developer
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username={{ site.data.personal.github_nexly }}&show_icons=true&theme=default&hide_border=true)](https://github.com/{{ site.data.personal.github_nexly }})
+[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username={{ site.data.personal.github_nexly }}&theme=github-compact&hide_border=true)](https://github.com/{{ site.data.personal.github_nexly }})
 
 ## Overview
 

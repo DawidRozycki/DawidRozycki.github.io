@@ -507,3 +507,22 @@ video {
     }
   }
 }
+
+
+// Logo styling
+.section-logo {
+  text-align: center;
+  margin: 20px 0;
+  
+  img {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+.section-emoji {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 80px;
+  line-height: 1;
+}

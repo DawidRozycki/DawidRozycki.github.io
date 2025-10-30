@@ -5,9 +5,13 @@ title: NextIdeas.app
 
 [← Back to Home](/)
 
+<div style="text-align: center; margin: 30px 0; font-size: 120px;">
+  💡
+</div>
+
 # NextIdeas.app
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username={{ site.data.personal.github_nextideas }}&show_icons=true&theme=default&hide_border=true)](https://github.com/{{ site.data.personal.github_nextideas }})
+[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username={{ site.data.personal.github_nextideas }}&theme=github-compact&hide_border=true)](https://github.com/{{ site.data.personal.github_nextideas }})
 
 ## Overview
 

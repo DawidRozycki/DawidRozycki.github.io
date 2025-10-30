@@ -11,6 +11,10 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
 
 ## Nexly - Co-Founder & Backend Developer
 
+<div style="text-align: center; margin: 20px 0;">
+  <img src="assets/images/nexly_logo_full.png" alt="Nexly Logo" style="max-width: 300px; height: auto;">
+</div>
+
 <video width="100%" controls>
   <source src="assets/videos/nexly_hero.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -27,7 +31,7 @@ As co-founder and backend developer at Nexly, I've been instrumental in building
 
 ---
 
-## Curriculum Vitae
+## 📄 Curriculum Vitae
 
 Backend developer with [X] years of experience building scalable systems and leading technical initiatives. Specialized in [your key technologies], with a track record of delivering high-impact solutions across multiple industries.
 
@@ -40,7 +44,7 @@ Backend developer with [X] years of experience building scalable systems and lea
 
 ---
 
-## NextIdeas.app
+## 💡 NextIdeas.app
 
 NextIdeas.app is [brief description - e.g., a platform for capturing, organizing, and developing ideas into actionable projects]. Built to solve the problem of [what problem it solves], it provides [key value proposition].
 
