@@ -1,12 +1,59 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.data.personal.name | default: site.title }}</a></h1>
+
+        <p class="tagline">{{ site.data.personal.tagline | default: site.description }}</p>
+
+        <div class="contact-info">
+          <h3>Contact</h3>
+          <p>
+            📧 <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a>
+          </p>
+          {% if site.data.personal.location %}
+          <p>
+            📍 {{ site.data.personal.location }}
+          </p>
+          {% endif %}
+          {% if site.data.personal.links.linkedin %}
+          <p>
+            💼 <a href="{{ site.data.personal.links.linkedin }}" target="_blank">LinkedIn</a>
+          </p>
+          {% endif %}
+          {% if site.data.personal.links.github %}
+          <p>
+            💻 <a href="{{ site.data.personal.links.github }}" target="_blank">GitHub</a>
+          </p>
+          {% endif %}
+          {% if site.data.personal.twitter_username and site.data.personal.twitter_username != "" %}
+          <p>
+            🐦 <a href="https://twitter.com/{{ site.data.personal.twitter_username }}" target="_blank">Twitter</a>
+          </p>
+          {% endif %}
+          {% if site.data.personal.links.resume_pdf %}
+          <p style="margin-top: 20px;">
+            <a href="{{ site.data.personal.links.resume_pdf }}" class="download-cv-btn" download>📄 Download CV</a>
+          </p>
+          {% endif %}
+        </div>
+      </header>
+      <section>
 
 [← Back to Home](/)
 
 <div class="github-stats-badge">
-  <a href="https://github.com/DawidRozycki">
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DawidRozycki&theme=default" alt="GitHub Profile Details" style="max-width: 100%; height: auto;">
+  <a href="https://github.com/{{ site.data.personal.github_username }}">
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={{ site.data.personal.github_username }}&theme=default" alt="GitHub Profile Details" style="max-width: 100%; height: auto;">
   </a>
 </div>
 
@@ -177,3 +224,15 @@ layout: default
     {% endif %}
   </div>
 </div>
+
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
