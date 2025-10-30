@@ -147,67 +147,19 @@ video {
 }
 
 // CV layout styles
-.cv-container {
-  max-width: 1000px;
-  margin: 0 auto;
+.cv-summary {
+  max-width: 100%;
+  margin: 20px 0 30px 0;
   padding: 20px;
-}
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
 
-.cv-header {
-  text-align: center;
-  margin-bottom: 40px;
-  padding: 30px 0;
-  border-bottom: 2px solid #ecf0f1;
-
-  h1 {
-    margin: 0 0 10px 0;
-    font-size: 2.5em;
+  p {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.6;
     color: #2c3e50;
-    border: none;
-  }
-
-  .cv-tagline {
-    font-size: 1.2em;
-    color: #7f8c8d;
-    margin: 0 0 20px 0;
-  }
-
-  .cv-summary {
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 8px;
-    border-left: 4px solid #3498db;
-
-    p {
-      margin: 0;
-      font-size: 1.1em;
-      line-height: 1.6;
-      color: #2c3e50;
-    }
-  }
-
-  .cv-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-
-    .cv-link {
-      display: inline-block;
-      padding: 8px 16px;
-      background: #3498db;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-
-      &:hover {
-        background: #2980b9;
-        text-decoration: none;
-      }
-    }
   }
 }
 

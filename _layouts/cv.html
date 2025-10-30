@@ -49,7 +49,7 @@
       </header>
       <section>
 
-[← Back to Home](/)
+<p><a href="/">← Back to Home</a></p>
 
 <div class="github-stats-badge">
   <a href="https://github.com/{{ site.data.personal.github_username }}">
@@ -57,38 +57,13 @@
   </a>
 </div>
 
-<div class="cv-container">
-  <header class="cv-header">
-    <h1>{{ site.data.personal.name }}</h1>
-    <p class="cv-tagline">{{ site.data.personal.tagline }}</p>
-    
-    {% if site.data.personal.summary %}
-    <div class="cv-summary">
-      <p>{{ site.data.personal.summary }}</p>
-    </div>
-    {% endif %}
-    
-    <div class="cv-links">
-      {% for link in site.data.personal.links %}
-        {% if link[1] != "#" and link[1] != "" %}
-          {% case link[0] %}
-            {% when 'resume_pdf' %}
-              <a href="{{ link[1] }}" class="cv-link" download>📄 Download PDF</a>
-            {% when 'linkedin' %}
-              <a href="{{ link[1] }}" class="cv-link">💼 LinkedIn</a>
-            {% when 'github' %}
-              <a href="{{ link[1] }}" class="cv-link">💻 GitHub</a>
-            {% when 'website' %}
-              <a href="{{ link[1] }}" class="cv-link">🌐 Website</a>
-            {% when 'email' %}
-              <a href="{{ link[1] }}" class="cv-link">✉️ Email</a>
-          {% endcase %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </header>
+{% if site.data.personal.summary %}
+<div class="cv-summary">
+  <p>{{ site.data.personal.summary }}</p>
+</div>
+{% endif %}
 
-  <div class="cv-content">
+<div class="cv-content">
     {{ content }}
 
     <!-- Current Projects Section -->
@@ -222,7 +197,6 @@
       </div>
     </section>
     {% endif %}
-  </div>
 </div>
 
       </section>
