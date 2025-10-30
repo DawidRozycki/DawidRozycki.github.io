@@ -12,10 +12,12 @@ body {
 }
 
 .wrapper {
-  max-width: 100%;
+  max-width: 1600px;
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
 }
 
 header {
@@ -23,7 +25,6 @@ header {
   min-width: 280px;
   position: fixed;
   top: 0;
-  left: 0;
   height: 100vh;
   overflow-y: auto;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -137,10 +138,10 @@ header {
 }
 
 section {
+  flex: 1;
+  min-width: 0;
+  padding: 20px 0 50px 0;
   margin-left: 320px;
-  padding: 20px 40px 50px 40px;
-  width: calc(100% - 320px);
-  max-width: none;
   display: block;
   
   > * {
