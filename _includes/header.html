@@ -1,4 +1,14 @@
 <header>
+  <div class="profile-picture">
+    {% if site.data.personal.profile_picture %}
+      <img src="{{ site.data.personal.profile_picture }}" alt="{{ site.data.personal.name }}">
+    {% else %}
+      <div class="profile-placeholder">
+        <span>{{ site.data.personal.name | slice: 0, 2 | upcase }}</span>
+      </div>
+    {% endif %}
+  </div>
+  
   <h1><a href="{{ "/" | absolute_url }}">{{ site.data.personal.name | default: site.title }}</a></h1>
 
   <p class="tagline">{{ site.data.personal.tagline | default: site.description }}</p>

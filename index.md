@@ -132,7 +132,7 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
       
       <div class="highlights">
         <div class="highlight-item">
-          <p class="highlight-description">• Co-Founder & Backend Developer at Nexly</p>
+          <p class="highlight-description">• {{ nexly.position }} at {{ nexly.company }}</p>
         </div>
         <div class="highlight-item">
           <p class="highlight-description">• [Previous notable role]</p>

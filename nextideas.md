@@ -5,11 +5,13 @@ title: NextIdeas.app
 
 {% include back_to_home.html %}
 
+{% assign nextideas = site.data.experience | where: "company", "NextIdeas.app" | first %}
+
 <div style="text-align: center; margin: 20px 0;">
-  <img src="assets/images/nextideas_logo.png" alt="NextIdeas Logo" style="max-width: 300px; height: auto;">
+  <img src="{{ nextideas.logo }}" alt="{{ nextideas.company }} Logo" style="max-width: 300px; height: auto;">
 </div>
 
-# NextIdeas.app
+# {{ nextideas.company }}
 
 <div style="text-align: center; margin: 20px 0;">
   <a href="https://github.com/dr-next357">
@@ -19,10 +21,10 @@ title: NextIdeas.app
 
 ## Overview
 
-NextIdeas.app is [detailed description of what it is - e.g., a comprehensive platform designed to help individuals and teams capture, organize, develop, and execute their ideas].
+{{ nextideas.company }} is [detailed description of what it is - e.g., a comprehensive platform designed to help individuals and teams capture, organize, develop, and execute their ideas].
 
-**Current Status:** [In development / Beta / Live]  
-**Website:** [https://nextideas.app](https://nextideas.app)
+**Current Status:** {{ nextideas.status }}  
+**Website:** [{{ nextideas.website }}]({{ nextideas.website }})
 
 ---
 

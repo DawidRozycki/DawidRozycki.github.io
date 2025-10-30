@@ -5,7 +5,9 @@ title: Nexly
 
 {% include back_to_home.html %}
 
-# Nexly - Co-Founder & Backend Developer
+{% assign nexly = site.data.experience | where: "company", "Nexly" | first %}
+
+# {{ nexly.company }} - {{ nexly.position }}
 
 <div style="text-align: center; margin: 20px 0;">
   <a href="https://github.com/davidRozycki">
