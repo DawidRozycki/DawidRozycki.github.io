@@ -11,7 +11,11 @@ title: Nexly
 
 # Nexly - Co-Founder & Backend Developer
 
-[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username={{ site.data.personal.github_nexly }}&theme=github-compact&hide_border=true)](https://github.com/{{ site.data.personal.github_nexly }})
+<div style="text-align: center; margin: 20px 0;">
+  <a href="https://github.com/{{ site.data.personal.github_nexly }}">
+    <img src="https://ghchart.rshah.org/3498db/{{ site.data.personal.github_nexly }}" alt="GitHub Contribution Grid" style="max-width: 100%; height: auto;">
+  </a>
+</div>
 
 ## Overview
 

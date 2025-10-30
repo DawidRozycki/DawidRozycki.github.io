@@ -11,7 +11,11 @@ title: NextIdeas.app
 
 # NextIdeas.app
 
-[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username={{ site.data.personal.github_nextideas }}&theme=github-compact&hide_border=true)](https://github.com/{{ site.data.personal.github_nextideas }})
+<div style="text-align: center; margin: 20px 0;">
+  <a href="https://github.com/{{ site.data.personal.github_nextideas }}">
+    <img src="https://ghchart.rshah.org/3498db/{{ site.data.personal.github_nextideas }}" alt="GitHub Contribution Grid" style="max-width: 100%; height: auto;">
+  </a>
+</div>
 
 ## Overview
 
