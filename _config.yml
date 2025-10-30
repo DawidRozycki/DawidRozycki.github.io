@@ -1,18 +1,18 @@
 # Site settings
-title: Your Name
-email: your.email@example.com
+title: Dawid Rozycki
+email: rozyckd@gmail.com
 description: >-
   Personal website showcasing my work at Nexly, personal projects, 
   and the creation of NextIdeas.app
 baseurl: ""
-url: "https://yourusername.github.io"
+url: "https://dawidrozycki.github.io"
 
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-minimal
 
 # Social links (optional)
-github_username: yourusername
+github_username: dawidrozycki
 linkedin_username: yourlinkedin
 twitter_username: yourtwitter
 
