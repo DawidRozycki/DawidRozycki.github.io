@@ -44,7 +44,13 @@
         <div class="technologies">
           <strong>Technologies:</strong>
           {% for tech in project.technologies %}
+          {% if tech.highlight %}
+          <span class="tech-tag tech-tag-highlight">{{ tech.name }}</span>
+          {% elsif tech.name %}
+          <span class="tech-tag">{{ tech.name }}</span>
+          {% else %}
           <span class="tech-tag">{{ tech }}</span>
+          {% endif %}
           {% endfor %}
         </div>
       </div>
@@ -111,69 +117,82 @@
 
     <!-- Education Section -->
     {% if site.data.education.degrees %}
-    <section class="education-section">
+    <section class="experience-section">
       <h2>Education</h2>
+      
       {% for degree in site.data.education.degrees %}
-      <div class="education-card">
-        <div class="education-header">
-          {% if degree.logo %}
-          <img src="{{ degree.logo }}" alt="{{ degree.institution }} logo" class="institution-logo">
-          {% endif %}
-          <div class="education-details">
-            <h3 class="institution-name">{{ degree.institution }}</h3>
-            <h4 class="degree-title">{{ degree.degree }}, {{ degree.field }}</h4>
-            <div class="education-meta">
-              <span class="duration">{{ degree.duration }}</span>
-              {% if degree.gpa %}
-              <span class="gpa">Grade: {{ degree.gpa }}</span>
-              {% endif %}
+      <div class="experience-card">
+        <div class="experience-header">
+          <div class="company-info">
+            {% if degree.logo %}
+            <img src="{{ degree.logo }}" alt="{{ degree.institution }} logo" class="company-logo">
+            {% endif %}
+            <div class="company-details">
+              <h3 class="position-title">{{ degree.degree }}, {{ degree.field }}</h3>
+              <h4 class="company-name">{{ degree.institution }}</h4>
+              <div class="job-meta">
+                <span class="duration">{{ degree.duration }}</span>
+                {% if degree.gpa %}
+                <span class="type">Grade: {{ degree.gpa }}</span>
+                {% endif %}
+              </div>
             </div>
           </div>
         </div>
-        
-        {% if degree.thesis %}
-        <div class="thesis">
-          <strong>Thesis:</strong> {{ degree.thesis }}
+
+        <div class="experience-content">
+          {% if degree.thesis or degree.honors or degree.activities %}
+          <div class="highlights">
+            {% if degree.thesis %}
+            <div class="highlight-item">
+              <h5 class="highlight-title">Thesis</h5>
+              <p class="highlight-description">{{ degree.thesis }}</p>
+            </div>
+            {% endif %}
+            
+            {% if degree.honors %}
+            <div class="highlight-item">
+              <h5 class="highlight-title">Honors & Achievements</h5>
+              <p class="highlight-description">
+                {% for honor in degree.honors %}
+                • {{ honor }}<br>
+                {% endfor %}
+              </p>
+            </div>
+            {% endif %}
+            
+            {% if degree.activities %}
+            <div class="highlight-item">
+              <h5 class="highlight-title">Activities</h5>
+              <p class="highlight-description">
+                {% for activity in degree.activities %}
+                • {{ activity }}<br>
+                {% endfor %}
+              </p>
+            </div>
+            {% endif %}
+          </div>
+          {% endif %}
         </div>
-        {% endif %}
-        
-        {% if degree.honors %}
-        <div class="honors">
-          <strong>Honors:</strong>
-          <ul>
-            {% for honor in degree.honors %}
-            <li>{{ honor }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-        
-        {% if degree.activities %}
-        <div class="activities">
-          <strong>Activities:</strong>
-          <ul>
-            {% for activity in degree.activities %}
-            <li>{{ activity }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
       </div>
       {% endfor %}
       
       {% if site.data.education.certifications %}
-      <h3>Certifications</h3>
       {% for cert in site.data.education.certifications %}
-      <div class="certification-card">
-        <div class="cert-header">
-          <h4 class="cert-name">{{ cert.name }}</h4>
-          <span class="cert-issuer">{{ cert.issuer }}</span>
-        </div>
-        <div class="cert-meta">
-          <span class="cert-date">{{ cert.date }}</span>
-          {% if cert.status %}
-          <span class="cert-status">{{ cert.status }}</span>
-          {% endif %}
+      <div class="experience-card">
+        <div class="experience-header">
+          <div class="company-info">
+            <div class="company-details">
+              <h3 class="position-title">{{ cert.name }}</h3>
+              <h4 class="company-name">{{ cert.issuer }}</h4>
+              <div class="job-meta">
+                <span class="duration">{{ cert.date }}</span>
+                {% if cert.status %}
+                <span class="type">{{ cert.status }}</span>
+                {% endif %}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {% endfor %}

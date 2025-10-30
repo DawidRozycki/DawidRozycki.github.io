@@ -4,7 +4,19 @@ current:
     status: "Active Development"
     start_date: "January 2024"
     description: "Innovative platform leveraging AI and data science expertise for [specific domain]"
-    technologies: ["React", "Next.js", "Python", "AI/ML", "PostgreSQL"]
+    technologies: 
+      - name: "Python"
+        highlight: true
+      - name: "AI"
+        highlight: true
+      - name: "MS Azure"
+        highlight: true
+      - name: "Google GCP"
+        highlight: true
+      - name: "Firebase"
+        highlight: true
+      - name: "React"
+      - name: "Next.js"
     highlights:
       - "Architecting full-stack application from ground up"
       - "Applying advanced analytics and machine learning techniques"
@@ -18,7 +30,19 @@ current:
     status: "Live"
     start_date: "2024"
     description: "AI-powered platform combining data science insights with modern web development"
-    technologies: ["Modern Web Stack", "AI/ML Integration", "Data Processing"]
+    technologies: 
+      - name: "Python"
+        highlight: true
+      - name: "AI"
+        highlight: true
+      - name: "DigitalOcean"
+        highlight: true
+      - name: "Gradient"
+        highlight: true
+      - name: "Data Processing"
+        highlight: true
+      - name: "Modern Web Stack"
+        highlight: true
     highlights:
       - "Solo development and product design"
       - "Integrated AI/ML capabilities for enhanced UX"

@@ -415,6 +415,12 @@ video {
     font-size: 0.85em;
     font-weight: 500;
     border: 1px solid #bdc3c7;
+    
+    &.tech-tag-highlight {
+      background: #27ae60;
+      color: white;
+      border: 1px solid #229954;
+    }
   }
 }
 
