@@ -7,18 +7,25 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
-  max-width: 100%;
+  max-width: 1600px;
   width: 100%;
-  padding: 0;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
 }
 
 header {
-  width: 300px;
-  float: left;
-  position: fixed;
+  width: 280px;
+  min-width: 280px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
   -webkit-font-smoothing: subpixel-antialiased;
   padding: 20px;
   
@@ -99,30 +106,47 @@ header {
 }
 
 section {
-  width: calc(100% - 340px);
-  float: right;
-  padding: 20px 40px 50px 40px;
-  max-width: 1200px;
-  margin-left: 340px;
+  flex: 1;
+  min-width: 0;
+  padding: 20px 0 50px 0;
+}
+
+// Responsive breakpoints
+@media print, screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 0 15px;
+    gap: 30px;
+  }
+  
+  header {
+    width: 260px;
+    min-width: 260px;
+  }
 }
 
 @media print, screen and (max-width: 960px) {
+  body {
+    display: block;
+  }
+  
+  .wrapper {
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 0;
+  }
+  
   header {
     position: relative;
     width: 100%;
-    float: none;
+    min-width: 100%;
+    top: 0;
     padding: 20px 0;
   }
   
   section {
     width: 100%;
-    float: none;
-    margin-top: 20px;
-  }
-  
-  .wrapper {
-    width: 95%;
-    padding: 0 10px;
+    padding: 20px 0 50px 0;
   }
   
   .experience-card, .project-card {
@@ -141,6 +165,12 @@ section {
   
   .job-meta {
     justify-content: center;
+  }
+  
+  .github-stats-badge {
+    img {
+      width: 100%;
+    }
   }
 }
 
