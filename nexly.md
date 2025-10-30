@@ -12,8 +12,8 @@ title: Nexly
 # Nexly - Co-Founder & Backend Developer
 
 <div style="text-align: center; margin: 20px 0;">
-  <a href="https://github.com/{{ site.data.personal.github_nexly }}">
-    <img src="https://ghchart.rshah.org/3498db/{{ site.data.personal.github_nexly }}" alt="GitHub Contribution Grid" style="max-width: 100%; height: auto;">
+  <a href="https://github.com/davidRozycki">
+    <img src="https://ghchart.rshah.org/3498db/davidRozycki" alt="GitHub Contribution Grid" style="max-width: 100%; height: auto;">
   </a>
 </div>
 

@@ -12,8 +12,8 @@ title: NextIdeas.app
 # NextIdeas.app
 
 <div style="text-align: center; margin: 20px 0;">
-  <a href="https://github.com/{{ site.data.personal.github_nextideas }}">
-    <img src="https://ghchart.rshah.org/3498db/{{ site.data.personal.github_nextideas }}" alt="GitHub Contribution Grid" style="max-width: 100%; height: auto;">
+  <a href="https://github.com/dr-next357">
+    <img src="https://ghchart.rshah.org/3498db/dr-next357" alt="GitHub Contribution Grid" style="max-width: 100%; height: auto;">
   </a>
 </div>
 
