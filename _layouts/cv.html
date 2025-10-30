@@ -109,6 +109,78 @@
       {% endfor %}
     </section>
 
+    <!-- Education Section -->
+    {% if site.data.education.degrees %}
+    <section class="education-section">
+      <h2>Education</h2>
+      {% for degree in site.data.education.degrees %}
+      <div class="education-card">
+        <div class="education-header">
+          {% if degree.logo %}
+          <img src="{{ degree.logo }}" alt="{{ degree.institution }} logo" class="institution-logo">
+          {% endif %}
+          <div class="education-details">
+            <h3 class="institution-name">{{ degree.institution }}</h3>
+            <h4 class="degree-title">{{ degree.degree }}, {{ degree.field }}</h4>
+            <div class="education-meta">
+              <span class="duration">{{ degree.duration }}</span>
+              {% if degree.gpa %}
+              <span class="gpa">Grade: {{ degree.gpa }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        
+        {% if degree.thesis %}
+        <div class="thesis">
+          <strong>Thesis:</strong> {{ degree.thesis }}
+        </div>
+        {% endif %}
+        
+        {% if degree.honors %}
+        <div class="honors">
+          <strong>Honors:</strong>
+          <ul>
+            {% for honor in degree.honors %}
+            <li>{{ honor }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        
+        {% if degree.activities %}
+        <div class="activities">
+          <strong>Activities:</strong>
+          <ul>
+            {% for activity in degree.activities %}
+            <li>{{ activity }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+      
+      {% if site.data.education.certifications %}
+      <h3>Certifications</h3>
+      {% for cert in site.data.education.certifications %}
+      <div class="certification-card">
+        <div class="cert-header">
+          <h4 class="cert-name">{{ cert.name }}</h4>
+          <span class="cert-issuer">{{ cert.issuer }}</span>
+        </div>
+        <div class="cert-meta">
+          <span class="cert-date">{{ cert.date }}</span>
+          {% if cert.status %}
+          <span class="cert-status">{{ cert.status }}</span>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+      {% endif %}
+    </section>
+    {% endif %}
+
     <!-- Technical Skills Section -->
     {% if site.data.skills.categories %}
     <section class="skills-section">
