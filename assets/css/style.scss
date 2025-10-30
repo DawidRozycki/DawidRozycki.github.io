@@ -359,10 +359,14 @@ video {
 }
 
 .project-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  .project-meta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
 
   .project-role {
     background: #3498db;

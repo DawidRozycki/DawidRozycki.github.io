@@ -3,6 +3,7 @@ current:
     role: "Co-Founder & CTO"
     status: "Active Development"
     start_date: "January 2024"
+    logo: "assets/images/nexly_logo_full.png"
     description: "Innovative platform leveraging AI and data science expertise for [specific domain]"
     technologies: 
       - name: "Python"
@@ -29,6 +30,7 @@ current:
     role: "Founder & Developer"
     status: "Live"
     start_date: "2024"
+    logo: "assets/images/nextideas_logo.png"
     description: "AI-powered platform combining data science insights with modern web development"
     technologies: 
       - name: "Python"

@@ -44,7 +44,11 @@ Backend developer with [X] years of experience building scalable systems and lea
 
 ---
 
-## 💡 NextIdeas.app
+## NextIdeas.app
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="assets/images/nextideas_logo.png" alt="NextIdeas Logo" style="max-width: 300px; height: auto;">
+</div>
 
 NextIdeas.app is [brief description - e.g., a platform for capturing, organizing, and developing ideas into actionable projects]. Built to solve the problem of [what problem it solves], it provides [key value proposition].
 

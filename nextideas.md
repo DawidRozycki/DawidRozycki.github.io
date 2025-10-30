@@ -5,8 +5,8 @@ title: NextIdeas.app
 
 [← Back to Home](/)
 
-<div style="text-align: center; margin: 30px 0; font-size: 120px;">
-  💡
+<div style="text-align: center; margin: 20px 0;">
+  <img src="assets/images/nextideas_logo.png" alt="NextIdeas Logo" style="max-width: 300px; height: auto;">
 </div>
 
 # NextIdeas.app

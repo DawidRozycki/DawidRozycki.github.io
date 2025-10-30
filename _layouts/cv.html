@@ -31,9 +31,18 @@
       {% for project in site.data.projects.current %}
       <div class="project-card current-project">
         <div class="project-header">
-          <h3 class="project-name">{{ project.name }}</h3>
-          <span class="project-role">{{ project.role }}</span>
-          <span class="project-status status-{{ project.status | slugify }}">{{ project.status }}</span>
+          <div class="company-info">
+            {% if project.logo %}
+            <img src="{{ project.logo }}" alt="{{ project.name }} logo" class="company-logo">
+            {% endif %}
+            <div class="company-details">
+              <h3 class="project-name">{{ project.name }}</h3>
+              <div class="project-meta">
+                <span class="project-role">{{ project.role }}</span>
+                <span class="project-status status-{{ project.status | slugify }}">{{ project.status }}</span>
+              </div>
+            </div>
+          </div>
         </div>
         <p class="project-description">{{ project.description }}</p>
         <div class="project-highlights">
