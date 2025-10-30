@@ -11,9 +11,9 @@ url: "https://dawidrozycki.github.io"
 markdown: kramdown
 theme: jekyll-theme-minimal
 
-# Social links (optional)
-github_username: dawidrozycki
-linkedin_username: Dawid Rozycki
+# Social links
+github_username: DawidRozycki
+linkedin_username: david-rozycki-1766215a
 
 # Collections
 collections:

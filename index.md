@@ -47,11 +47,3 @@ NextIdeas.app is [brief description - e.g., a platform for capturing, organizing
 **Current status:** [In development / Beta / Live]
 
 [Discover NextIdeas.app →](/nextideas)
-
----
-
-## Contact
-
-📧 [Contact email](mailto:rozyckd@gmail.com)  
-💼 [LinkedIn](https://www.linkedin.com/in/david-rozycki-1766215a/)  
-🐙 [GitHub](https://github.com/DawidRozycki)
