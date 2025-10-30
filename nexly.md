@@ -7,6 +7,8 @@ title: Nexly
 
 # Nexly - Co-Founder & Backend Developer
 
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=davidRozycki&show_icons=true&theme=default&hide_border=true)](https://github.com/davidRozycki)
+
 ## Overview
 
 <video width="100%" controls>

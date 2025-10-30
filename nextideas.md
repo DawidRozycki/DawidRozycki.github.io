@@ -7,6 +7,8 @@ title: NextIdeas.app
 
 # NextIdeas.app
 
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=dr-next357&show_icons=true&theme=default&hide_border=true)](https://github.com/dr-next357)
+
 ## Overview
 
 NextIdeas.app is [detailed description of what it is - e.g., a comprehensive platform designed to help individuals and teams capture, organize, develop, and execute their ideas].

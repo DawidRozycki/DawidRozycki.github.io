@@ -7,6 +7,8 @@ title: Curriculum Vitae
 
 # Curriculum Vitae
 
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DawidRozycki&show_icons=true&theme=default&hide_border=true)](https://github.com/DawidRozycki)
+
 ## Professional Summary
 
 Backend developer and entrepreneur with [X] years of experience building scalable systems and leading technical initiatives. Specialized in [your key technologies], with a proven track record of delivering high-impact solutions across multiple industries. Currently co-founding Nexly, where I architect and build the entire backend infrastructure.
