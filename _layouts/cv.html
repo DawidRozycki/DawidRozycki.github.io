@@ -10,44 +10,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.data.personal.name | default: site.title }}</a></h1>
-
-        <p class="tagline">{{ site.data.personal.tagline | default: site.description }}</p>
-
-        {% if site.data.personal.summary %}
-        <div class="sidebar-summary">
-          <p>{{ site.data.personal.summary }}</p>
-        </div>
-        {% endif %}
-
-        <div class="sidebar-links">
-          {% if site.data.personal.links.resume_pdf %}
-            <a href="{{ site.data.personal.links.resume_pdf }}" class="sidebar-link" download>📄 Download PDF</a>
-          {% endif %}
-          {% if site.data.personal.links.linkedin %}
-            <a href="{{ site.data.personal.links.linkedin }}" class="sidebar-link" target="_blank">💼 LinkedIn</a>
-          {% endif %}
-          {% if site.data.personal.links.github %}
-            <a href="{{ site.data.personal.links.github }}" class="sidebar-link" target="_blank">💻 GitHub</a>
-          {% endif %}
-          {% if site.data.personal.links.email %}
-            <a href="{{ site.data.personal.links.email }}" class="sidebar-link">✉️ Email</a>
-          {% endif %}
-        </div>
-
-        <div class="contact-info">
-          <h3>Contact</h3>
-          <p>
-            📧 <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a>
-          </p>
-          {% if site.data.personal.location %}
-          <p>
-            📍 {{ site.data.personal.location }}
-          </p>
-          {% endif %}
-        </div>
-      </header>
+      {% include header.html %}
       <section>
 
 <p><a href="/">← Back to Home</a></p>
