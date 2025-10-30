@@ -13,7 +13,7 @@
       {% include header.html %}
       <section>
 
-<p><a href="/">← Back to Home</a></p>
+{% include back_to_home.html %}
 
 <div class="github-stats-badge">
   <a href="https://github.com/{{ site.data.personal.github_username }}">
@@ -267,6 +267,9 @@
       </div>
     </section>
     {% endif %}
+
+{% include back_to_home.html %}
+
 </div>
 
       </section>
