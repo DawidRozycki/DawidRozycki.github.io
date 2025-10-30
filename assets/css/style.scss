@@ -109,6 +109,11 @@ section {
   flex: 1;
   min-width: 0;
   padding: 20px 0 50px 0;
+  display: block;
+  
+  > * {
+    width: 100%;
+  }
 }
 
 // Responsive breakpoints
@@ -266,8 +271,16 @@ video {
   }
 }
 
+.cv-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .experience-section, .projects-section, .skills-section, .notable-projects-section {
   margin-top: 40px;
+  width: 100%;
+  display: block;
 
   h2 {
     font-size: 2em;
