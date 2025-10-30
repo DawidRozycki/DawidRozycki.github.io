@@ -24,7 +24,7 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
       </div>
     </div>
     
-    <video width="60%" controls style="margin: 20px 0; border-radius: 8px; display: block;">
+    <video width="60%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
       <source src="assets/videos/nexly_hero.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -58,8 +58,8 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
       <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
         <strong>🔗 Links:</strong>
         <div style="margin-top: 10px; display: flex; gap: 15px; flex-wrap: wrap;">
+          <a href="/nexly" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">📖 Learn More</a>
           <a href="#" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">🌐 Visit Nexly</a>
-          <a href="/nexly" style="display: inline-block; padding: 8px 16px; background: #2c3e50; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">📖 Learn More</a>
         </div>
       </div>
     </div>
@@ -79,7 +79,7 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
       </div>
     </div>
     
-    <div style="width: 60%; height: 300px; margin: 20px 0; border-radius: 8px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+    <div style="width: 60%; height: 300px; margin: 20px auto; border-radius: 8px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
       💡
     </div>
     
@@ -108,11 +108,11 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
         <span class="tech-tag tech-tag-highlight">Modern Web Stack</span>
       </div>
       
-      <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #27ae60;">
+      <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
         <strong>🔗 Links:</strong>
         <div style="margin-top: 10px; display: flex; gap: 15px; flex-wrap: wrap;">
-          <a href="https://nextideas.app" target="_blank" style="display: inline-block; padding: 8px 16px; background: #27ae60; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">🌐 Visit NextIdeas.app</a>
-          <a href="/nextideas" style="display: inline-block; padding: 8px 16px; background: #2c3e50; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">📖 Learn More</a>
+          <a href="/nextideas" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">📖 Learn More</a>
+          <a href="https://nextideas.app" target="_blank" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">🌐 Visit NextIdeas.app</a>
         </div>
       </div>
     </div>
@@ -143,7 +143,12 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
         </div>
       </div>
       
-      <p style="margin-top: 20px;"><a href="/cv">View my full CV →</a></p>
+      <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
+        <strong>🔗 Links:</strong>
+        <div style="margin-top: 10px; display: flex; gap: 15px; flex-wrap: wrap;">
+          <a href="/cv" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">📖 View Full CV</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
