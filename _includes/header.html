@@ -1,7 +1,7 @@
 <header>
   <div class="profile-picture">
     {% if site.data.personal.profile_picture %}
-      <img src="{{ site.data.personal.profile_picture }}" alt="{{ site.data.personal.name }}">
+      <img src="{{ site.data.personal.profile_picture | relative_url }}" alt="{{ site.data.personal.name }}">
     {% else %}
       <div class="profile-placeholder">
         <span>{{ site.data.personal.name | slice: 0, 2 | upcase }}</span>
