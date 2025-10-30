@@ -303,6 +303,10 @@ video {
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   }
+  
+  &.current-project {
+    border-left: 4px solid #27ae60;
+  }
 }
 
 .project-card.current-project {

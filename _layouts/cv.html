@@ -30,7 +30,7 @@
     <section class="experience-section">
       <h2>Current Projects</h2>
       {% for project in current_projects %}
-      <div class="experience-card">
+      <div class="experience-card current-project">
         <div class="experience-header">
           <div class="company-info">
             {% if project.logo %}
@@ -82,6 +82,7 @@
       <h2>Professional Experience</h2>
       
       {% for job in site.data.experience %}
+      {% unless job.is_current_project %}
       <div class="experience-card">
         <div class="experience-header">
           <div class="company-info">
@@ -131,6 +132,7 @@
           {% endif %}
         </div>
       </div>
+      {% endunless %}
       {% endfor %}
     </section>
 
