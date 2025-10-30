@@ -52,6 +52,6 @@ NextIdeas.app is [brief description - e.g., a platform for capturing, organizing
 
 ## Contact
 
-📧 [your.email@example.com](mailto:your.email@example.com)  
-💼 [LinkedIn](https://linkedin.com/in/yourprofile)  
-🐙 [GitHub](https://github.com/yourusername)
+📧 [Contact email](mailto:rozyckd@gmail.com)  
+💼 [LinkedIn](https://www.linkedin.com/in/david-rozycki-1766215a/)  
+🐙 [GitHub](https://github.com/DawidRozycki)
