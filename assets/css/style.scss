@@ -139,7 +139,8 @@ header {
 section {
   margin-left: 320px;
   padding: 20px 40px 50px 40px;
-  max-width: 1200px;
+  width: calc(100% - 320px);
+  max-width: none;
   display: block;
   
   > * {
