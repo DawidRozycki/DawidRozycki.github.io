@@ -86,7 +86,8 @@ Nexly is a platform that automates financial statement review. As co-founder and
     </video>
     
     <div class="experience-content">
-      <p>Intelligently link and cross-reference values throughout financial documents, ensuring consistency and enabling rapid navigation between related items. This feature is "context aware", meaning it's not a simple value comparison, but takes into account the context around the values. This alows for complex matching of items which are not identical, or are on rows which are not perfectly named the same.</p>
+      <p>Intelligently link and cross-reference values throughout financial documents, ensuring consistency and enabling rapid navigation between related items.</p>
+      <p>This feature is context-aware, meaning it goes beyond simple value comparison by analyzing the surrounding context. This allows for complex matching of items that aren't identical or appear on rows with different naming conventions.</p>
       
       <div class="highlights">
         <div class="highlight-item">
@@ -113,13 +114,14 @@ Nexly is a platform that automates financial statement review. As co-founder and
     </a>
     
     <div class="experience-content">
-      <p>Automatically compare current year figures with prior year data to identify discrepancies, and ensure comparative accuracy. This feature, like Internal Consistency, is "context aware".</p>
+      <p>Automatically compare current year figures with prior year data to identify discrepancies, reclassifications, and ensure comparative accuracy.</p>
+      <p>Like Internal Consistency, this feature is context-aware, intelligently matching line items even when labels or structures differ between years.</p>
       
       <div class="highlights">
         <div class="highlight-item">
-          <p class="highlight-description">• Display the automatically compared current and prior year financial statement line items on the relevant values</p>
-          <p class="highlight-description">• Open compared items in split-screen</p>
-          <p class="highlight-description">• Right side-panel eases navigation and explains discrepancies (or similarities) between compared items</p>
+          <p class="highlight-description">• Display automatically compared current and prior year financial statement line items directly on relevant values</p>
+          <p class="highlight-description">• Open compared items in split-screen for side-by-side analysis</p>
+          <p class="highlight-description">• Right side-panel eases navigation and provides detailed explanations of discrepancies (or similarities) between compared items</p>
         </div>
       </div>
     </div>
