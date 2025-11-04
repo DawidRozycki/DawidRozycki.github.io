@@ -63,11 +63,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
       <div class="highlights">
         <div class="highlight-item">
           <p class="highlight-description">• Comprehensive validation of all sums and calculations throughout the document</p>
-        </div>
-        <div class="highlight-item">
           <p class="highlight-description">• Multi-directional sum verification (horizontal, vertical, and cross-table calculations)</p>
-        </div>
-        <div class="highlight-item">
           <p class="highlight-description">• Advanced handling of complex tables with non-adjacent sum components and nested calculations</p>
         </div>
       </div>
@@ -90,16 +86,12 @@ Nexly is a platform that automates financial statement review. As co-founder and
     </video>
     
     <div class="experience-content">
-      <p>Intelligently link and cross-reference values throughout financial documents, ensuring consistency and enabling rapid navigation between related items.</p>
+      <p>Intelligently link and cross-reference values throughout financial documents, ensuring consistency and enabling rapid navigation between related items. This feature is "context aware", meaning it's not a simple value comparison, but takes into account the context around the values. This alows for complex matching of items which are not identical, or are on rows which are not perfectly named the same.</p>
       
       <div class="highlights">
         <div class="highlight-item">
           <p class="highlight-description">• Smart linking between all document sections, connecting related values across statements and notes</p>
-        </div>
-        <div class="highlight-item">
           <p class="highlight-description">• Context-aware matching that goes beyond simple text search, understanding financial relationships</p>
-        </div>
-        <div class="highlight-item">
           <p class="highlight-description">• Instant navigation between primary statements, footnotes, and supporting schedules</p>
         </div>
       </div>
@@ -121,17 +113,13 @@ Nexly is a platform that automates financial statement review. As co-founder and
     </a>
     
     <div class="experience-content">
-      <p>Automatically compare current year figures with prior year data to identify discrepancies, reclassifications, and ensure comparative accuracy.</p>
+      <p>Automatically compare current year figures with prior year data to identify discrepancies, and ensure comparative accuracy. This feature, like Internal Consistency, is "context aware".</p>
       
       <div class="highlights">
         <div class="highlight-item">
-          <p class="highlight-description">• Automated comparison of current and prior year financial statement line items</p>
-        </div>
-        <div class="highlight-item">
-          <p class="highlight-description">• Detection of unexplained variances and potential reclassification issues</p>
-        </div>
-        <div class="highlight-item">
-          <p class="highlight-description">• Validation of opening balance consistency and comparative period adjustments</p>
+          <p class="highlight-description">• Display the automatically compared current and prior year financial statement line items on the relevant values</p>
+          <p class="highlight-description">• Open compared items in split-screen</p>
+          <p class="highlight-description">• Right side-panel eases navigation and explains discrepancies (or similarities) between compared items</p>
         </div>
       </div>
     </div>
@@ -158,11 +146,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
       <div class="highlights">
         <div class="highlight-item">
           <p class="highlight-description">• Framework-aware AI model trained on accounting standards, eliminating financial reporting hallucinations</p>
-        </div>
-        <div class="highlight-item">
           <p class="highlight-description">• Comprehensive analysis of primary statements, notes, and disclosures with framework compliance insights</p>
-        </div>
-        <div class="highlight-item">
           <p class="highlight-description">• Intelligent completeness assessment for notes and disclosures based on applicable reporting frameworks</p>
         </div>
       </div>
