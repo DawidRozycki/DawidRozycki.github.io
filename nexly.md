@@ -224,24 +224,76 @@ As co-founder and backend developer, I've been responsible for:
 
 ### Impact & Achievements
 
-- **Scale:** [Metric about users, requests, data processed]
-- **Performance:** [Performance improvements you achieved]
-- **Reliability:** [Uptime, error rates, system stability]
-- **Team:** [If you built or led a team]
+**Scale:**
+- Processing hundreds of financial documents monthly
+- Handling thousands of 'extracted values' daily with automated validation
+- Supporting many concurrent document processing jobs
+- Managing tens of thousands of AI agent executions per month
+
+**Performance:**
+- Reduced document processing time from many minutes (manual validation + manual review) per page, to under 2 minutes (automated validation + manual review) per page - 87% improvement
+- Optimized LLM costs through intelligent provider selection and structured output parsing
+- Improved table extraction accuracy from 75% to 90%+ through multi-OCR and table-normalization strategy
+
+**Reliability:**
+- Maintained nearly 100% uptime for our document processing pipeline over 12 months
+- Implemented comprehensive error handling with automatic retries
+- Built robust monitoring with Sentry integration
+- Reduced false positive validation alerts through MA filtering system, significantly improving user trust
+
+**Team:**
+- Nexly is a 3-person bootstrapped team, we built the entire platform on our own with these limited resources over the span of 18 months
+- From initial concept to first user trials (on limited MVP product) it took 6 months, with constant refinement afterwards based on user experience, feedback and the needs communicated by prospects and testers
+- Collaborated closely with CTO on architectural decisions and system design
+- Established code quality standards with pre-commit hooks, Ruff linting, and comprehensive pytest coverage and PR review process
 
 ---
 
 ## Technical Challenges & Solutions
 
-### Challenge 1: [Name of challenge]
-**Problem:** [Describe the technical challenge]  
-**Solution:** [How you solved it]  
-**Result:** [The outcome and impact]
+### Challenge 1: Mathematical Accuracy Validation in Complex Financial Tables
+**Problem:** Validating mathematical accuracy in financial statements is extraordinarily complex because financial tables don't follow simple, predictable patterns. Unlike basic spreadsheets, financial statements have: 
+  - **Non-adjacent relationships**: Totals and their components are often separated by multiple rows or columns, with subtotals, headers, and descriptive text in between
+  - **Multi-directional calculations**: Formulas can flow horizontally (across columns for time periods), vertically (down rows for line items), or both simultaneously in the same table
+  - **Complex nested structures**: Subtotals that become components of higher-level totals, creating multi-level hierarchical calculations
+  - **Irregular layouts**: Merged cells, indented hierarchies, and non-standard table structures that break traditional grid assumptions
+Traditional rule-based systems fail because they can't handle this variability—they either miss valid formulas or flag legitimate variations as errors. A purely algorithmic approach would require thousands of hardcoded rules to cover edge cases, making the system brittle and unmaintainable.
 
-### Challenge 2: [Name of challenge]
-**Problem:** [Describe the technical challenge]  
-**Solution:** [How you solved it]  
-**Result:** [The outcome and impact]
+**Solution:** Designed a hybrid algorithmic-AI approach that combines the speed of deterministic algorithms with the flexibility of LLM-based reasoning:
+- **Algorithmic Layer (Speed & Precision)**:
+  - Fast pattern detection: Algorithmic scanning identifies potential formula candidates by analyzing table structure, detecting numeric patterns, and finding common financial relationships (additions, subtractions)
+  - Coordinate-based mapping: Converts table cells to 2D coordinates with row/column configurations, enabling precise component-to-total linking
+  - Automated calculation verification: Performs actual mathematical calculations to verify if detected patterns produce correct results, generating detailed calculation traces
+  - Pattern normalization: Standardizes table structures by handling merged cells, extracting headers, and creating consistent 2D representations for AI analysis
+- **AI Layer (Flexibility & Context)**:
+  - Formula Extraction Agent: Uses LLM's to analyze table structure and identify ALL mathematical relationships, understanding business context that algorithms miss. Employs iterative refinement with up to N retry attempts, automatically switching to more-capable (slower) models after M attempts for complex cases.
+  - Math Validation Agent: Validates each detected formula by analyzing calculation discrepancies, determining failure reasons (wrong components, incorrect operators, total mismatch, partial application), and suggesting corrections. Uses structured prompts with detailed calculation traces to guide LLM reasoning.
+  - Intelligent retry logic: When formulas fail validation, the AI suggests corrections (new components, operators, or application scope) and automatically retries with the improved formula, learning from previous attempts through context accumulation.
+  - Multi-model strategy: Starts with fast, cost-effective models for straightforward cases, automatically escalates to more powerful models for complex scenarios requiring deeper reasoning.
+- **Key Innovation - Structured Reasoning with Calculation Context**: The AI doesn't only see raw table data - in addition, it receives:
+  - Structured calculations: Pre-computed calculation traces showing "Component1 + Component2 = Expected vs Actual, Difference: X"
+  - Previous attempt context: Explanations from prior validation attempts to avoid repeating mistakes
+  - Business semantics: Row/column configurations with labels, enabling the AI to understand "Revenue + Other Income = Total Income" as a business concept, not just numbers
+  - Failure taxonomy: Predefined failure reasons that guide structured responses
+This hybrid approach makes the system adaptive rather than rigid—it can handle novel table layouts and unusual financial structures without requiring new rules, while maintaining the speed and precision of algorithmic validation for common cases.
+
+**Result:** Achieved 90%+ accuracy on mathematical accuracy validation across diverse financial statement formats (balance sheets, income statements, cash flow statements and others). The hybrid system processes hundreds or thousands of validations per document in a brief amount of time, with:
+- Significant reduction in false positives compared to pure algorithmic approach
+- Improvement in complex case handling where formulas span non-adjacent cells or require business context
+- Automatic formula correction in initially failed validations through AI-suggested improvements
+- Cost efficiency:About 30% of validations handled by Algorithmic approach, 50% by fast AI models, with automatic escalation to slower models only for complex cases for the remaining 20%. This appraoch results in a significantly lower LLM cost
+The system successfully validates calculations that would be impossible for pure algorithms (e.g., "Net Income = Revenue - COGS - Operating Expenses - Interest - Taxes" where components are scattered across multiple rows with subtotals)
+
+
+### Challenge 2: Complex Financial Table Extraction with Merged Cells
+**Problem:** Financial statements contain highly complex tables with merged cells, nested headers, and irregular layouts that traditional OCR systems couldn't parse accurately. Azure Document Intelligence and Google Document AI would return raw cell data without understanding the logical structure, leading to 40%+ extraction errors on tables with merged cells. This made automated validation unreliable and required extensive manual review.
+**Solution:** Designed a multi-layered table normalization pipeline combining:
+  - **Merged Cell Detection Algorithm**: Built logic to identify merged cells using cell coordinates and sizes
+  - **AI-Powered Normalization**: Integrated Claude AI with vision capabilities to intelligently normalize table structures
+  - **Coordinate-Based Linking**: Implemented coordinate mapping between normalized values and source document locations for verification
+**Result:** Achieved 90%+ accuracy on complex financial tables (up from 60%), and enabled reliable automated validation
+
+
 
 ---
 
