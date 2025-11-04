@@ -26,7 +26,7 @@ title: Nexly
 ## Overview
 
 <video width="100%" controls>
-  <source src="assets/videos/nexly_hero.mp4" type="video/mp4">
+  <source src="assets/videos/nexly/nexly_hero.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -53,7 +53,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
     </div>
     
     <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
-      <source src="assets/videos/nexly_ma.mp4" type="video/mp4">
+      <source src="assets/videos/nexly/nexly_ma.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     
@@ -85,7 +85,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
     </div>
     
     <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
-      <source src="assets/videos/nexly_ic.mp4" type="video/mp4">
+      <source src="assets/videos/nexly/nexly_ic.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     
@@ -117,7 +117,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
     </div>
     
     <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
-      <source src="assets/videos/nexly_pyc.mp4" type="video/mp4">
+      <source src="assets/videos/nexly/nexly_pyc.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     
@@ -149,7 +149,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
     </div>
     
     <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
-      <source src="assets/videos/nexly_ai_chat.mp4" type="video/mp4">
+      <source src="assets/videos/nexly/nexly_ai_chat.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     
@@ -287,10 +287,12 @@ The system successfully validates calculations that would be impossible for pure
 
 ### Challenge 2: Complex Financial Table Extraction with Merged Cells
 **Problem:** Financial statements contain highly complex tables with merged cells, nested headers, and irregular layouts that traditional OCR systems couldn't parse accurately. Azure Document Intelligence and Google Document AI would return raw cell data without understanding the logical structure, leading to 40%+ extraction errors on tables with merged cells. This made automated validation unreliable and required extensive manual review.
+
 **Solution:** Designed a multi-layered table normalization pipeline combining:
   - **Merged Cell Detection Algorithm**: Built logic to identify merged cells using cell coordinates and sizes
   - **AI-Powered Normalization**: Integrated Claude AI with vision capabilities to intelligently normalize table structures
   - **Coordinate-Based Linking**: Implemented coordinate mapping between normalized values and source document locations for verification
+
 **Result:** Achieved 90%+ accuracy on complex financial tables (up from 60%), and enabled reliable automated validation
 
 

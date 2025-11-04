@@ -29,7 +29,7 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
     </div>
     
     <video width="60%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
-      <source src="assets/videos/nexly_hero.mp4" type="video/mp4">
+      <source src="assets/videos/nexly/nexly_hero.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     
