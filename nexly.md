@@ -25,10 +25,12 @@ title: Nexly
 
 ## Overview
 
-<video width="100%" controls>
-  <source src="assets/videos/nexly/nexly_hero.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<a href="assets/videos/nexly/nexly_hero.mp4" class="glightbox" data-gallery="nexly-features">
+  <video width="100%" controls>
+    <source src="assets/videos/nexly/nexly_hero.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</a>
 
 Nexly is a platform that automates financial statement review. As co-founder and backend developer, I've built the technical foundation and core features that power the platform.
 
@@ -52,10 +54,12 @@ Nexly is a platform that automates financial statement review. As co-founder and
       </div>
     </div>
     
-    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
-      <source src="assets/videos/nexly/nexly_ma.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <a href="assets/videos/nexly/nexly_ma.mp4" class="glightbox" data-gallery="nexly-features" data-title="Mathematical Accuracy">
+      <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block; cursor: pointer;">
+        <source src="assets/videos/nexly/nexly_ma.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </a>
     
     <div class="experience-content">
       <p>Automatically validate mathematical accuracy across all tables in financial documents, eliminating calculation errors before publication.</p>
@@ -84,10 +88,12 @@ Nexly is a platform that automates financial statement review. As co-founder and
       </div>
     </div>
     
-    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
-      <source src="assets/videos/nexly/nexly_ic.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <a href="assets/videos/nexly/nexly_ic.mp4" class="glightbox" data-gallery="nexly-features" data-title="Internal Consistency">
+      <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block; cursor: pointer;">
+        <source src="assets/videos/nexly/nexly_ic.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </a>
     
     <div class="experience-content">
       <p>Intelligently link and cross-reference values throughout financial documents, ensuring consistency and enabling rapid navigation between related items.</p>
@@ -116,7 +122,9 @@ Nexly is a platform that automates financial statement review. As co-founder and
       </div>
     </div>
     
-    <img src="assets/images/projects/nexly/nexly_py1.png" alt="Prior Year Consistency" style="width: 80%; margin: 20px auto; border-radius: 8px; display: block;">
+    <a href="assets/images/projects/nexly/nexly_py1.png" class="glightbox" data-gallery="nexly-features" data-title="Prior Year Consistency">
+      <img src="assets/images/projects/nexly/nexly_py1.png" alt="Prior Year Consistency" style="width: 80%; margin: 20px auto; border-radius: 8px; display: block; cursor: pointer;">
+    </a>
     
     <div class="experience-content">
       <p>Automatically compare current year figures with prior year data to identify discrepancies, reclassifications, and ensure comparative accuracy.</p>
@@ -145,10 +153,12 @@ Nexly is a platform that automates financial statement review. As co-founder and
       </div>
     </div>
     
-    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
-      <source src="assets/videos/nexly/nexly_ai_chat.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <a href="assets/videos/nexly/nexly_ai_chat.mp4" class="glightbox" data-gallery="nexly-features" data-title="Nexly AI">
+      <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block; cursor: pointer;">
+        <source src="assets/videos/nexly/nexly_ai_chat.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </a>
     
     <div class="experience-content">
       <p>Interact with your financial statements through our specialized AI assistant, trained specifically on financial frameworks and accounting standards.</p>

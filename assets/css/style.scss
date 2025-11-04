@@ -692,3 +692,37 @@ video {
     }
   }
 }
+
+// Lightbox hover effects
+.glightbox {
+  position: relative;
+  display: inline-block;
+  cursor: zoom-in !important;
+  
+  &::after {
+    content: '🔍';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  &:hover::after {
+    opacity: 0.9;
+  }
+  
+  &:hover img,
+  &:hover video {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  img, video {
+    transition: opacity 0.3s ease;
+  }
+}
