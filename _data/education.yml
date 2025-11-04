@@ -3,20 +3,20 @@ degrees:
     degree: "Master's degree"
     field: "Accounting and Finance"
     duration: "2013 - 2015"
-    logo: "assets/images/sgh_logo.jpeg"
+    logo: "assets/images/cv/education/sgh_logo.jpeg"
     
   - institution: "University of Warsaw"
     degree: "Post-graduate"
     field: "Data Science, business applications of R programming"
     duration: "2017 - 2018"
-    logo: "assets/images/uni_war_logo.jpeg"
+    logo: "assets/images/cv/education/uni_war_logo.jpeg"
     
   - institution: "Cracow University of Technology"
     degree: "Engineer's degree (equivalent to Bachelor's degree)"
     field: "Energy Management and Systems Technology/Technician"
     duration: "2009 - 2013"
     gpa: "5.0"
-    logo: "assets/images/cracow_uni_logo.jpeg"
+    logo: "assets/images/cv/education/cracow_uni_logo.jpeg"
     activities: 
       - "Energetics study group member"
       - "Class group senior"

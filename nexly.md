@@ -116,10 +116,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
       </div>
     </div>
     
-    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
-      <source src="assets/videos/nexly/nexly_pyc.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <img src="assets/images/projects/nexly/nexly_py1.png" alt="Prior Year Consistency" style="width: 80%; margin: 20px auto; border-radius: 8px; display: block;">
     
     <div class="experience-content">
       <p>Automatically compare current year figures with prior year data to identify discrepancies, reclassifications, and ensure comparative accuracy.</p>

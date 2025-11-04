@@ -4,7 +4,7 @@
   duration: "September 2024 - Present"
   duration_short: "1 yr+"
   type: "Full-time"
-  logo: "/assets/images/nexly_logo_full.png"
+  logo: "/assets/images/projects/nexly/nexly_logo_full.png"
   status: "Active Development"
   website: "https://nexly.tech/"
   is_current_project: true
@@ -26,7 +26,7 @@
   duration: "September 2025 - Present"
   duration_short: "3 months+"
   type: "Full-time"
-  logo: "/assets/images/nextideas_logo.png"
+  logo: "/assets/images/projects/nextideas/nextideas_logo.png"
   status: "Live"
   website: "https://nextideas.app"
   is_current_project: true
@@ -46,7 +46,7 @@
   duration: "April 2022 - August 2024"
   duration_short: "2 yrs 5 mos"
   type: "Full-time"
-  logo: "/assets/images/credit_suisse_logo.jpeg"
+  logo: "/assets/images/cv/experience/credit_suisse_logo.jpeg"
   technologies: ["R", "Python", "RMarkdown", "Git", "Risk Analytics", "Data Visualization"]
   highlights:
     - title: "Custom Analytics Development"
@@ -64,7 +64,7 @@
   duration: "May 2020 - December 2021"
   duration_short: "1 yr 8 mos"
   type: "Full-time"
-  logo: "/assets/images/standardchartered_logo.jpeg"
+  logo: "/assets/images/cv/experience/standardchartered_logo.jpeg"
   technologies: ["Python", "R", "Statistical Modeling", "Risk Analytics", "Financial Mathematics"]
   highlights:
     - title: "IBOR Transition Leadership"
@@ -80,7 +80,7 @@
   duration: "May 2018 - April 2020"
   duration_short: "2 yrs"
   type: "Full-time"
-  logo: "/assets/images/pko_bp_logo.jpeg"
+  logo: "/assets/images/cv/experience/pko_bp_logo.jpeg"
   technologies: ["Python", "R", "Risk Management", "Market Analytics"]
   highlights:
     - title: "Market Risk Analysis"
@@ -96,7 +96,7 @@
   duration: "February 2017 - May 2018"
   duration_short: "1 yr 4 mos"
   type: "Full-time"
-  logo: "/assets/images/grupapge_logo.jpeg"
+  logo: "/assets/images/cv/experience/grupapge_logo.jpeg"
   technologies: ["Python", "VBA", "Statistical Modeling", "Energy Markets Analytics", "Risk Management"]
   note: "EDF Poland was acquired by PGE and formed PGE - Energia Ciepla in November 2017"
   highlights:
