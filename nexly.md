@@ -30,85 +30,24 @@ title: Nexly
   Your browser does not support the video tag.
 </video>
 
-Nexly is [describe what Nexly does - e.g., a platform that helps businesses...]. As co-founder and backend developer, I've been instrumental in building the technical foundation and core features that power the platform.
+Nexly is a platform that automates financial statement review. As co-founder and backend developer, I've built the technical foundation and core features that power the platform.
 
 **What Nexly does:**
-- [Key value proposition 1]
-- [Key value proposition 2]
-- [Key value proposition 3]
+- Automates the review process of financial statements, saving time and reducing risk
+- Helps Auditors and Accountants find discrepancies in financials, before they get published
+- Empowers teams and their stakeholders to collaborate on financial statement review
 
 ---
 
 ## Features
 
 <section class="experience-section">
+  <!-- 1. Mathematical Accuracy -->
   <div class="experience-card">
     <div class="experience-header">
       <div class="company-info">
         <div class="company-details">
-          <h3 class="position-title">AI Chat</h3>
-        </div>
-      </div>
-    </div>
-    
-    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
-      <source src="assets/videos/nexly_ai_chat.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    
-    <div class="experience-content">
-      <p>[Describe the AI chat feature - what it does, how it helps users, the technology behind it]</p>
-      
-      <div class="highlights">
-        <div class="highlight-item">
-          <p class="highlight-description">• [Capability 1]</p>
-        </div>
-        <div class="highlight-item">
-          <p class="highlight-description">• [Capability 2]</p>
-        </div>
-        <div class="highlight-item">
-          <p class="highlight-description">• [Capability 3]</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="experience-card">
-    <div class="experience-header">
-      <div class="company-info">
-        <div class="company-details">
-          <h3 class="position-title">Intelligent Connections</h3>
-        </div>
-      </div>
-    </div>
-    
-    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
-      <source src="assets/videos/nexly_ic.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    
-    <div class="experience-content">
-      <p>[Describe the intelligent connections feature - how it works, what problems it solves]</p>
-      
-      <div class="highlights">
-        <div class="highlight-item">
-          <p class="highlight-description">• [Capability 1]</p>
-        </div>
-        <div class="highlight-item">
-          <p class="highlight-description">• [Capability 2]</p>
-        </div>
-        <div class="highlight-item">
-          <p class="highlight-description">• [Capability 3]</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="experience-card">
-    <div class="experience-header">
-      <div class="company-info">
-        <div class="company-details">
-          <h3 class="position-title">Market Analysis</h3>
+          <h3 class="position-title">Mathematical Accuracy</h3>
         </div>
       </div>
     </div>
@@ -119,17 +58,113 @@ Nexly is [describe what Nexly does - e.g., a platform that helps businesses...].
     </video>
     
     <div class="experience-content">
-      <p>[Describe the market analysis feature - what insights it provides, how it helps users make decisions]</p>
+      <p>Automatically validate mathematical accuracy across all tables in financial documents, eliminating calculation errors before publication.</p>
       
       <div class="highlights">
         <div class="highlight-item">
-          <p class="highlight-description">• [Capability 1]</p>
+          <p class="highlight-description">• Comprehensive validation of all sums and calculations throughout the document</p>
         </div>
         <div class="highlight-item">
-          <p class="highlight-description">• [Capability 2]</p>
+          <p class="highlight-description">• Multi-directional sum verification (horizontal, vertical, and cross-table calculations)</p>
         </div>
         <div class="highlight-item">
-          <p class="highlight-description">• [Capability 3]</p>
+          <p class="highlight-description">• Advanced handling of complex tables with non-adjacent sum components and nested calculations</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 2. Internal Consistency -->
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="company-info">
+        <div class="company-details">
+          <h3 class="position-title">Internal Consistency</h3>
+        </div>
+      </div>
+    </div>
+    
+    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
+      <source src="assets/videos/nexly_ic.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="experience-content">
+      <p>Intelligently link and cross-reference values throughout financial documents, ensuring consistency and enabling rapid navigation between related items.</p>
+      
+      <div class="highlights">
+        <div class="highlight-item">
+          <p class="highlight-description">• Smart linking between all document sections, connecting related values across statements and notes</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• Context-aware matching that goes beyond simple text search, understanding financial relationships</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• Instant navigation between primary statements, footnotes, and supporting schedules</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 3. Prior Year Consistency -->
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="company-info">
+        <div class="company-details">
+          <h3 class="position-title">Prior Year Consistency</h3>
+        </div>
+      </div>
+    </div>
+    
+    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
+      <source src="assets/videos/nexly_pyc.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="experience-content">
+      <p>Automatically compare current year figures with prior year data to identify discrepancies, reclassifications, and ensure comparative accuracy.</p>
+      
+      <div class="highlights">
+        <div class="highlight-item">
+          <p class="highlight-description">• Automated comparison of current and prior year financial statement line items</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• Detection of unexplained variances and potential reclassification issues</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• Validation of opening balance consistency and comparative period adjustments</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 4. Nexly AI Chat -->
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="company-info">
+        <div class="company-details">
+          <h3 class="position-title">Nexly AI</h3>
+        </div>
+      </div>
+    </div>
+    
+    <video width="80%" controls style="margin: 20px auto; border-radius: 8px; display: block;">
+      <source src="assets/videos/nexly_ai_chat.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="experience-content">
+      <p>Interact with your financial statements through our specialized AI assistant, trained specifically on financial frameworks and accounting standards.</p>
+      
+      <div class="highlights">
+        <div class="highlight-item">
+          <p class="highlight-description">• Framework-aware AI model trained on accounting standards, eliminating financial reporting hallucinations</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• Comprehensive analysis of primary statements, notes, and disclosures with framework compliance insights</p>
+        </div>
+        <div class="highlight-item">
+          <p class="highlight-description">• Intelligent completeness assessment for notes and disclosures based on applicable reporting frameworks</p>
         </div>
       </div>
     </div>
@@ -144,7 +179,7 @@ Nexly is [describe what Nexly does - e.g., a platform that helps businesses...].
 
 As co-founder and backend developer, I've been responsible for:
 
-- **Architecture Design:** Designed and implemented the entire backend architecture, choosing technologies and patterns that enable scalability and maintainability
+- **Architecture Design:** In partnership with our CTO, designed and implemented the backend architecture, selecting technologies and patterns that enable scalability and maintainability
 - **System Design:** [Specific system or component you designed]
 - **Technical Decisions:** [Key technical decisions you made and their impact]
 
