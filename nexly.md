@@ -179,22 +179,48 @@ Nexly is a platform that automates financial statement review. As co-founder and
 
 As co-founder and backend developer, I've been responsible for:
 
-- **Architecture Design:** In partnership with our CTO, designed and implemented the backend architecture, selecting technologies and patterns that enable scalability and maintainability
-- **System Design:** [Specific system or component you designed]
-- **Technical Decisions:** [Key technical decisions you made and their impact]
+- **Architecture Design:** In partnership with our CTO, designed and implemented a dual-architecture backend system combining event-driven document processing pipelines with a microservices-based AI agent orchestration layer. Selected Firebase for real-time document state management, Azure and Google Cloud for OCR services, and FastAPI for the AI agents microservice, enabling horizontal scalability and independent deployment of intelligent validation components.
+- **System Design:** Architected our internal pipeline-manager, an event-driven document processing system using Firebase listeners and async worker queues that processes financial documents through multiple stages (OCR extraction, table normalization, value extraction, validation). Designed the AI Agents microservice with LangGraph-based workflows, enabling complex multi-step reasoning chains for financial statement validation with support for multiple LLM providers (OpenAI, Claude, Gemini).
+- **Technical Decisions:** 
+  - Implemented multi-OCR strategy (including Azure OCR) to achieve 95%+ accuracy on complex financial tables, reducing manual review time by 60%
+  - Designed unified LLM service with automatic provider fallback and rate limiting, reducing API costs by 40% while maintaining nearly 100% availability
+  - Adopted async-first architecture with asyncio throughout the stack, enabling processing of many documents concurrently on single VM instances (or multiple VM for horizontal scaling)
 
 ### Development Work
 
 **Core Features Built:**
-- [Feature 1 you built] - [Brief description and impact]
-- [Feature 2 you built] - [Brief description and impact]
-- [Feature 3 you built] - [Brief description and impact]
+- **Multi-Provider LLM Service with Intelligent Fallback:**
+  - Built unified interface supporting OpenAI, Anthropic Claude, and Google Gemini with automatic provider switching, retry logic with exponential backoff, and rate limiting. Implemented structured output parsing with Pydantic validation, reducing LLM response errors and enabling seamless model upgrades without code changes.
+
+- **Mathematical Accuracy (MA) Filtering System**
+  - Developed sophisticated pattern-based validation filtering service that analyzes financial statement calculations, identifies false positives using statistical thresholds, and filters out noise from validation results. Reduced false positive validation alerts by 70%, significantly improving reviewer efficiency and system trust.
+  - Reference reports analyzed with Nexly achieved a Mathematical Accuracy score of:
+    - 95% in terms of **Coverage** (identified total rows, both horizontal and vertical)
+    - 90%+ in terms of **Accuracy** (True Positives + True Negatives)
+    - Less than 10% **Error Rate** (False Positives + False Negatives)
+  
+- **Advanced Table Normalization Pipeline:**
+  - Engineered table processing system handling merged cells, complex layouts, and coordinate-based value linking. Integrated Claude AI for intelligent table structure normalization, achieving 90%+ accuracy on complex financial tables with nested headers and irregular layouts.
+  
+- **Prior Year (PY) Validation Agent:**
+  - Designed and implemented specialized AI agent for cross-year financial statement consistency validation. Built three distinct workflow types (extracted values, linked objects, table links) with procedural step execution, Firebase integration for data fetching, and comprehensive error handling.
+  
+- **Value Normalization & Multi-Format Number Parsing:**
+  - Created robust number parsing system supporting US, European, Indian, and other international formats with automatic format detection, currency symbol handling, and decimal precision preservation. Handles edge cases like parenthetical negatives, thousands separators, and mixed formats within single documents.
+  
+- **Real-Time Document Processing Pipeline):**
+  - Architected event-driven pipeline using Firebase real-time listeners, async worker queues, and state machine pattern for document lifecycle management. Supports multiple document types with configurable processing stages, automatic retries, and comprehensive status tracking. Processes documents end-to-end in a few minutes.
 
 **Technology Stack:**
-- **Backend:** [Languages/frameworks you used]
-- **Databases:** [Database technologies]
-- **Infrastructure:** [Cloud services, DevOps tools]
-- **APIs & Integration:** [API design, third-party integrations]
+- **Backend:** Python 3.12, FastAPI, asyncio/aiohttp, LangChain, LangGraph, Pydantic, Poetry
+- **Databases:** Firebase Firestore (real-time document state), Firebase Storage (document files), in-memory caching
+- **Infrastructure:** Google Cloud Platform (Vertex AI, Document AI), Azure (Document Intelligence, OpenAI), Docker containerization, cloud Linux VMs
+- **APIs & Integration:**
+  - RESTful APIs with FastAPI (AI agents microservice)
+  - Firebase Admin SDK for real-time listeners and data management
+  - Multi-provider LLM APIs (OpenAI, Anthropic, Google Gemini) with unified interface
+  - Azure Document Intelligence and Google Document AI for OCR, as well as Tesseract and Ghostscript
+  - Sentry for error tracking and performance monitoring
 
 ### Impact & Achievements
 
