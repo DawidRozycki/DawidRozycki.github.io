@@ -134,7 +134,7 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
         <div class="highlight-item">
           <h5 class="highlight-title">Current Focus</h5>
           <p class="highlight-description">• Co-Founder & Lead Backend Developer at Nexly (AI-powered audit automation)</p>
-          <p class="highlight-description">• Solo-Founder at NextIdeas.app (AI-driven idea validation platform)</p>
+          <p class="highlight-description">• Solo-Founder at NextIdeas.app (Find business domains, check their availability and claim them in one place)</p>
         </div>
         <div class="highlight-item">
           <h5 class="highlight-title">Previous Experience</h5>
@@ -150,9 +150,10 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
         </div>
         <div class="highlight-item">
           <h5 class="highlight-title">Education & Certifications</h5>
-          <p class="highlight-description">• Master's in Finance & Accounting (SGH Warsaw School of Economics)</p>
           <p class="highlight-description">• Postgraduate in Data Science (University of Warsaw)</p>
-          <p class="highlight-description">• CFA Level 1 (CFA Institute)</p>
+          <p class="highlight-description">• Master's in Finance & Accounting (SGH Warsaw School of Economics)</p>
+          <p class="highlight-description">• Bachelor's in Energetics Systems (Cracow Institute of Technology)</p>
+          <p class="highlight-description">• CFA Level 1 passed (CFA Institute)</p>
         </div>
       </div>
       
