@@ -8,17 +8,23 @@
   status: "Active Development"
   website: "https://nexly.tech/"
   is_current_project: true
-  technologies: ["Python", "AI", "MS Azure", "Google GCP", "Firebase", "React", "Next.js"]
-  tech_highlights: ["Python", "AI", "MS Azure", "Google GCP", "Firebase"]
+  technologies: ["Python", "FastAPI", "LangChain", "LangGraph", "PyTorch", "Firebase", "MS Azure", "Google GCP", "Docker"]
+  tech_highlights: ["Python", "FastAPI", "LangChain", "Firebase", "MS Azure", "Google GCP"]
   highlights:
-    - title: "Backend Architecture"
-      description: "Architected the entire backend infrastructure from ground up, creating scalable systems that serve our growing user base"
-    - title: "AI-Powered Features"
-      description: "Built core features including AI chat, intelligent connections, and market analysis leveraging advanced machine learning techniques"
-    - title: "Technical Leadership"
-      description: "Leading technical strategy and infrastructure decisions, applying data science expertise to create innovative solutions"
-    - title: "Platform Scaling"
-      description: "Scaled the platform to handle [X] users while maintaining performance and reliability"
+    - title: "Dual-Architecture Backend System"
+      description: "Architected event-driven document processing pipelines with microservices-based AI agent orchestration using Firebase, Azure, Google Cloud, and FastAPI—enabling horizontal scalability and independent deployment of intelligent validation components"
+    - title: "Hybrid Algorithmic-AI Validation"
+      description: "Engineered mathematical accuracy validation system achieving 90%+ accuracy on complex financial tables—combining deterministic pattern detection with LLM-based reasoning (GPT-4, Claude, Gemini), reducing false positives by 70% and manual review time by 60%"
+    - title: "Context-Aware Matching Engine"
+      description: "Built Internal Consistency and Prior Year Comparison system using normalized value matching with LLM-powered validation—achieved 85%+ precision handling structural reorganizations, label variations, and cross-year reclassifications"
+    - title: "Multi-Provider LLM Service"
+      description: "Developed unified LLM interface with automatic fallback, retry logic, and rate limiting across OpenAI, Anthropic, and Google—reduced API costs by 40% while maintaining 100% availability through intelligent provider selection"
+    - title: "Advanced Table Normalization"
+      description: "Integrated Claude AI vision capabilities with merged cell detection algorithms—improved OCR accuracy from 75% to 90%+ on complex financial tables with nested headers and irregular layouts"
+    - title: "Production Infrastructure"
+      description: "Deployed secure, scalable infrastructure processing hundreds of documents monthly with real-time Firebase listeners, async worker queues, and state machine pattern—maintained 100% uptime over 12 months with comprehensive error handling"
+    - title: "Product & Business Leadership"
+      description: "Shaped product roadmap around key auditor pain points (mathematical accuracy, consistency validation, AI assistance), co-authored business plan and pitch deck, pitched to accelerators and VCs as part of 3-person bootstrapped team"
 
 - company: "NextIdeas.app"
   position: "Solo-Founder"
