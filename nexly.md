@@ -179,6 +179,9 @@ As co-founder and backend developer, I've been responsible for:
 
 **Core Features Built:**
 - **Multi-Provider LLM Service with Intelligent Fallback:**
+  
+  <img src="assets/videos/nexly/llm-service-1.gif" alt="Multi-Provider LLM Service" style="display: block; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+  
   - Built unified interface supporting OpenAI, Anthropic Claude, and Google Gemini with automatic provider switching, retry logic with exponential backoff, and rate limiting. Implemented structured output parsing with Pydantic validation, reducing LLM response errors and enabling seamless model upgrades without code changes.
 
 - **Mathematical Accuracy (MA) Filtering System**
