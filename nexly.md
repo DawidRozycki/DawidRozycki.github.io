@@ -48,6 +48,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
       <div class="company-info">
         <div class="company-details">
           <h3 class="position-title">Mathematical Accuracy</h3>
+          <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #7f8c8d; font-style: italic;">Validates all calculations and totals across every table in the document</p>
         </div>
       </div>
     </div>
@@ -76,6 +77,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
       <div class="company-info">
         <div class="company-details">
           <h3 class="position-title">Internal Consistency</h3>
+          <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #7f8c8d; font-style: italic;">Links matching values across different sections of the same document</p>
         </div>
       </div>
     </div>
@@ -105,6 +107,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
       <div class="company-info">
         <div class="company-details">
           <h3 class="position-title">Prior Year Consistency</h3>
+          <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #7f8c8d; font-style: italic;">Compares current year figures with prior year data to detect changes</p>
         </div>
       </div>
     </div>
@@ -133,6 +136,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
       <div class="company-info">
         <div class="company-details">
           <h3 class="position-title">Nexly AI</h3>
+          <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #7f8c8d; font-style: italic;">Chat with your financial statements using framework-aware AI</p>
         </div>
       </div>
     </div>
@@ -280,6 +284,39 @@ The system successfully validates calculations that would be impossible for pure
 
 **Result:** Achieved 90%+ accuracy on complex financial tables (up from 60%), and enabled reliable automated validation
 
+
+### Challenge 3: Context-Aware Matching for Internal Consistency and Prior Year Comparisons
+**Problem:** Matching financial statement line items across different sections (Internal Consistency) or across years (Prior Year Consistency) is far more complex than simple text or value comparison. Financial statements exhibit significant variability that makes automated matching extremely challenging:
+  - **Structural reorganization**: Companies frequently restructure their financial statements between years, moving line items to different sections, changing aggregation levels, or reclassifying accounts
+  - **Label variations**: The same financial concept may be expressed differently across years (e.g., "Revenue" vs "Total Revenue" vs "Sales Revenue" vs "Net Sales")
+  - **Value transformations**: Identical concepts may have different values due to legitimate business changes, restatements, or reclassifications, making pure value matching unreliable
+  - **Table structure changes**: Tables may have different layouts, column orders, or hierarchical structures between years, breaking coordinate-based matching
+  - **Contextual ambiguity**: Multiple line items may have similar or identical values, requiring semantic understanding to determine correct matches (e.g., distinguishing between "Operating Income" and "Net Income" when both happen to be $1.5M)
+Simple value matching would create false positives when different line items coincidentally have the same value, while missing legitimate matches when values change due to business operations. Traditional fuzzy string matching lacks the financial domain knowledge to understand that "PP&E, net" and "Property, plant and equipment (net of depreciation)" represent the same concept.
+
+**Solution:** Developed a hybrid value-based + AI-powered validation system that combines deterministic matching with intelligent context analysis:
+- **Algorithmic Matching Layer (Speed & Precision)**:
+  - Normalized value matching: Match current year (CY) and prior year (PY) extracted values based on normalized monetary values, handling different formats, currencies, and signs
+  - Table-aware filtering: Group values by source table and apply table-level exclusions (e.g., skip note reference columns, code columns) to prevent false matches
+  - Page classification integration: Exclude values from non-financial pages (ex.: cover page, table of content) identified through page classification to reduce noise
+  - Section-based filtering: Filter values by financial statement section (balance sheet, income statement, cash flow) to ensure cross-year comparisons within appropriate contexts
+  - Duplicate prevention: Enforce unique matching per CY value to prevent one-to-many relationships that would confuse reviewers
+- **AI Validation Layer (Context & Semantics)**:
+  - LLM-powered match validation: For each potential value match, send full markdown context from both CY and PY pages to an LLM, which analyzes:
+    - Semantic similarity of surrounding text and labels
+    - Table structure and hierarchical position within financial statements
+    - Business context to determine if values represent the same financial concept
+    - Temporal consistency to verify the match makes sense across reporting periods
+  - Structured validation prompts: Provide LLM with complete page markdown, extracted value metadata (coordinates, table descriptions, section info), and explicit instructions to assess match validity
+  - Confidence scoring: LLM responds with a set of confidence and recommendation stats
+  - Batch processing: Process multiple matches concurrently to optimize LLM API usage and reduce latency
+
+**Result:** Achieved high precision and recall on cross-year and cross-section matching across diverse financial statement formats, with:
+- Successful matching of items with different labels but identical meaning (e.g., "Cash and cash equivalents" matched with "Cash & equivalents")
+- Accurate cross-year matching despite structural changes, reclassifications, and label modifications between periods
+- Reduction in false positive matches compared to simple value-based matching approaches
+- Automated validation of almost all matches with high confidence, requiring manual review only for genuinely ambiguous cases
+The system successfully handles real-world complexity like matching "Property, plant and equipment, net" in the balance sheet with "PP&E (net of accumulated depreciation)" in the notes, or correctly matching line items across years even when values change due to business operations, while rejecting false matches where different line items coincidentally have the same value.
 
 
 ---
