@@ -128,17 +128,31 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
     </div>
     
     <div class="experience-content">
-      <p>Backend developer with [X] years of experience building scalable systems and leading technical initiatives. Specialized in [your key technologies], with a track record of delivering high-impact solutions across multiple industries.</p>
+      <p>Backend developer and AI engineer with 7+ years of experience building scalable systems across fintech, banking, and energy sectors. Specialized in Python, AI/ML frameworks (PyTorch, TensorFlow, LangChain), and cloud infrastructure (Azure, GCP, Firebase), with a track record of delivering high-impact solutions from prototype to production.</p>
       
       <div class="highlights">
         <div class="highlight-item">
-          <p class="highlight-description">• {{ nexly.position }} at {{ nexly.company }}</p>
+          <h5 class="highlight-title">Current Focus</h5>
+          <p class="highlight-description">• Co-Founder & Lead Backend Developer at Nexly (AI-powered audit automation)</p>
+          <p class="highlight-description">• Solo-Founder at NextIdeas.app (AI-driven idea validation platform)</p>
         </div>
         <div class="highlight-item">
-          <p class="highlight-description">• [Previous notable role]</p>
+          <h5 class="highlight-title">Previous Experience</h5>
+          <p class="highlight-description">• Assistant Vice President, Credit Suisse (Credit Portfolio Analytics & Risk Management)</p>
+          <p class="highlight-description">• Data Scientist, Standard Chartered Bank (IBOR Transition & Interest Rate Risk Modeling)</p>
+          <p class="highlight-description">• Market Risk Specialist, PKO BP & PGE (Derivatives Valuation & Risk Analytics)</p>
         </div>
         <div class="highlight-item">
-          <p class="highlight-description">• [Another notable role or achievement]</p>
+          <h5 class="highlight-title">Core Expertise</h5>
+          <p class="highlight-description">• Multimodal & Generative AI: Document understanding, LLM orchestration, computer vision integration</p>
+          <p class="highlight-description">• Distributed Systems: Cloud-native deployment, async pipelines, microservices architecture</p>
+          <p class="highlight-description">• Financial Modeling: Credit risk analytics, quantitative modeling, algorithmic validation</p>
+        </div>
+        <div class="highlight-item">
+          <h5 class="highlight-title">Education & Certifications</h5>
+          <p class="highlight-description">• Master's in Finance & Accounting (SGH Warsaw School of Economics)</p>
+          <p class="highlight-description">• Postgraduate in Data Science (University of Warsaw)</p>
+          <p class="highlight-description">• CFA Level 1 (CFA Institute)</p>
         </div>
       </div>
       
