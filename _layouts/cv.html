@@ -27,7 +27,7 @@
     <!-- Current Projects Section -->
     {% assign current_projects = site.data.experience | where: "is_current_project", true %}
     {% if current_projects.size > 0 %}
-    <section class="experience-section">
+    <div class="experience-section">
       <h2>Current Projects</h2>
       {% for project in current_projects %}
       <div class="experience-card current-project">
@@ -74,11 +74,11 @@
         </div>
       </div>
       {% endfor %}
-    </section>
+    </div>
     {% endif %}
 
     <!-- Professional Experience Section -->
-    <section class="experience-section">
+    <div class="experience-section">
       <h2>Professional Experience</h2>
       
       {% for job in site.data.experience %}
@@ -134,11 +134,11 @@
       </div>
       {% endunless %}
       {% endfor %}
-    </section>
+    </div>
 
     <!-- Education Section -->
     {% if site.data.education.degrees %}
-    <section class="experience-section">
+    <div class="experience-section">
       <h2>Education</h2>
       
       {% for degree in site.data.education.degrees %}
@@ -218,12 +218,12 @@
       </div>
       {% endfor %}
       {% endif %}
-    </section>
+    </div>
     {% endif %}
 
     <!-- Technical Skills Section -->
     {% if site.data.skills.categories %}
-    <section class="skills-section">
+    <div class="skills-section">
       <h2>Technical Skills</h2>
       <div class="skills-grid">
         {% for category in site.data.skills.categories %}
@@ -241,12 +241,12 @@
         </div>
         {% endfor %}
       </div>
-    </section>
+    </div>
     {% endif %}
 
     <!-- Notable Projects Section -->
     {% if site.data.projects.notable %}
-    <section class="notable-projects-section">
+    <div class="notable-projects-section">
       <h2>Notable Projects</h2>
       <div class="notable-projects-grid">
         {% for project in site.data.projects.notable %}
@@ -265,7 +265,7 @@
         </div>
         {% endfor %}
       </div>
-    </section>
+    </div>
     {% endif %}
 </div>
 

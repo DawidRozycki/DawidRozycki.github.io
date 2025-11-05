@@ -10,6 +10,7 @@ body {
   display: flex;
   justify-content: center;
   color: #2c3e50;
+  overflow-x: hidden;
 }
 
 p {
@@ -27,6 +28,7 @@ li {
   margin: 0 auto;
   display: flex;
   gap: 40px;
+  box-sizing: border-box;
 }
 
 header {
@@ -170,6 +172,21 @@ section {
     width: 260px;
     min-width: 260px;
   }
+  
+  section {
+    margin-left: 280px;
+  }
+}
+
+@media print, screen and (max-width: 1024px) {
+  header {
+    width: 240px;
+    min-width: 240px;
+  }
+  
+  section {
+    margin-left: 260px;
+  }
 }
 
 @media print, screen and (max-width: 960px) {
@@ -189,10 +206,12 @@ section {
     min-width: 100%;
     top: 0;
     padding: 20px 0;
+    height: auto;
   }
   
   section {
     width: 100%;
+    margin-left: 0;
     padding: 20px 0 50px 0;
   }
   
@@ -218,6 +237,52 @@ section {
     img {
       width: 100%;
     }
+  }
+}
+
+@media print, screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+  
+  .experience-card, .project-card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .notable-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  .wrapper {
+    padding: 0 5px;
+  }
+  
+  .experience-card, .project-card {
+    padding: 12px;
+  }
+  
+  .company-info {
+    gap: 10px;
+    
+    .company-logo {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  .position-title, .project-name {
+    font-size: 1.2em !important;
+  }
+  
+  .company-name {
+    font-size: 1em !important;
   }
 }
 
@@ -319,6 +384,47 @@ video {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+// Ensure CV content doesn't overflow on small screens
+@media print, screen and (max-width: 960px) {
+  .cv-content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .cv-summary {
+    margin: 10px 0 20px 0;
+    padding: 15px;
+  }
+  
+  .github-stats-badge {
+    margin: 10px 0;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// Additional mobile fixes
+@media print, screen and (max-width: 768px) {
+  .cv-content {
+    padding: 0;
+  }
+  
+  .github-stats-badge {
+    margin: 10px 0;
+    
+    img {
+      width: 100%;
+      max-width: none;
+    }
+  }
 }
 
 .experience-section, .projects-section, .skills-section, .notable-projects-section {
