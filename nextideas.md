@@ -21,7 +21,7 @@ title: NextIdeas.app
 
 ## Overview
 
-{{ nextideas.company }} is [detailed description of what it is - e.g., a comprehensive platform designed to help individuals and teams capture, organize, develop, and execute their ideas].
+{{ nextideas.company }} is [description].
 
 **Current Status:** {{ nextideas.status }}  
 **Website:** [{{ nextideas.website }}]({{ nextideas.website }})
@@ -30,7 +30,7 @@ title: NextIdeas.app
 
 ## The Problem
 
-[Describe the problem in detail - what pain points does it address? What challenges do people face that led you to build this?]
+[Problem description]
 
 **Key challenges:**
 - [Challenge 1]
@@ -41,7 +41,7 @@ title: NextIdeas.app
 
 ## The Solution
 
-[Explain how NextIdeas.app solves these problems. What's your approach? What makes it different?]
+[Solution description]
 
 **Core value propositions:**
 - [Value proposition 1]
@@ -53,21 +53,21 @@ title: NextIdeas.app
 ## Key Features
 
 ### [Feature 1 Name]
-[Detailed description of the feature, how it works, and what value it provides]
+[Feature description]
 
 **Benefits:**
 - [Benefit 1]
 - [Benefit 2]
 
 ### [Feature 2 Name]
-[Detailed description of the feature, how it works, and what value it provides]
+[Feature description]
 
 **Benefits:**
 - [Benefit 1]
 - [Benefit 2]
 
 ### [Feature 3 Name]
-[Detailed description of the feature, how it works, and what value it provides]
+[Feature description]
 
 **Benefits:**
 - [Benefit 1]
@@ -78,30 +78,30 @@ title: NextIdeas.app
 ## Technology Stack
 
 ### Frontend
-- [Technology 1] - [Why you chose it]
-- [Technology 2] - [Why you chose it]
+- [Technology 1]
+- [Technology 2]
 
 ### Backend
-- [Technology 1] - [Why you chose it]
-- [Technology 2] - [Why you chose it]
+- [Technology 1]
+- [Technology 2]
 
 ### Infrastructure
-- [Technology 1] - [Why you chose it]
-- [Technology 2] - [Why you chose it]
+- [Technology 1]
+- [Technology 2]
 
 ### Other Tools
-- [Tool 1] - [Purpose]
-- [Tool 2] - [Purpose]
+- [Tool 1]
+- [Tool 2]
 
 ---
 
 ## Development Journey
 
 ### The Vision
-[Describe your initial vision - what inspired you to build this? What's the long-term goal?]
+[Vision description]
 
 ### Current Progress
-[What stage is the project at? What have you built so far?]
+[Progress description]
 
 **Completed:**
 - [Milestone 1]
@@ -121,14 +121,14 @@ title: NextIdeas.app
 ## Technical Challenges
 
 ### Challenge 1: [Name]
-**Problem:** [Describe the challenge]  
-**Solution:** [How you're solving or solved it]  
-**Learning:** [What you learned from this]
+**Problem:** [Problem description]  
+**Solution:** [Solution description]  
+**Learning:** [Learning description]
 
 ### Challenge 2: [Name]
-**Problem:** [Describe the challenge]  
-**Solution:** [How you're solving or solved it]  
-**Learning:** [What you learned from this]
+**Problem:** [Problem description]  
+**Solution:** [Solution description]  
+**Learning:** [Learning description]
 
 ---
 
@@ -148,11 +148,11 @@ title: NextIdeas.app
 
 ## Get Involved
 
-[If applicable - are you looking for beta testers, feedback, collaborators?]
+[Description]
 
-**Try it out:** [Link to the app if live]  
-**Feedback:** [How people can provide feedback]  
-**Follow the journey:** [Social media, blog, newsletter?]
+**Try it out:** [Link]  
+**Feedback:** [Contact method]  
+**Follow the journey:** [Links]
 
 ---
 
