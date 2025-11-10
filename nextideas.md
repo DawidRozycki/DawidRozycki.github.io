@@ -21,6 +21,11 @@ title: NextIdeas.app
 
 ## Overview
 
+<video width="100%" controls>
+  <source src="assets/videos/nextideas/nextideas-demo-16_9.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 NextIdeas.app is an AI-powered domain name generator that transforms business ideas into brandable domain suggestions with real-time availability verification.
 
 **Current Status:** Live 🚀
