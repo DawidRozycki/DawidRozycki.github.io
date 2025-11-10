@@ -21,7 +21,7 @@ title: NextIdeas.app
 
 ## Overview
 
-<video width="100%" controls>
+<video width="100%" controls preload="none">
   <source src="assets/videos/nextideas/nextideas-demo-16_9.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
