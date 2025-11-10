@@ -28,7 +28,7 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
       </div>
     </div>
     
-    <video width="60%" controls preload="none" style="margin: 20px auto; border-radius: 8px; display: block;">
+    <video width="60%" controls preload="metadata" style="margin: 20px auto; border-radius: 8px; display: block;">
       <source src="assets/videos/nexly/nexly_hero.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -82,7 +82,7 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
       </div>
     </div>
     
-    <video width="60%" controls preload="none" style="margin: 20px auto; border-radius: 8px; display: block;">
+    <video width="60%" controls preload="metadata" style="margin: 20px auto; border-radius: 8px; display: block;">
       <source src="assets/videos/nextideas/nextideas-demo-16_9.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>

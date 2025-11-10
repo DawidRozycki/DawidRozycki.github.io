@@ -25,7 +25,7 @@ title: Nexly
 
 ## Overview
 
-<video width="100%" controls preload="none">
+<video width="100%" controls preload="metadata">
   <source src="assets/videos/nexly/nexly_hero.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -53,7 +53,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
       </div>
     </div>
     
-    <video width="80%" controls preload="none" style="margin: 20px auto; border-radius: 8px; display: block;">
+    <video width="80%" controls preload="metadata" style="margin: 20px auto; border-radius: 8px; display: block;">
       <source src="assets/videos/nexly/nexly_ma.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -82,7 +82,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
       </div>
     </div>
     
-    <video width="80%" controls preload="none" style="margin: 20px auto; border-radius: 8px; display: block;">
+    <video width="80%" controls preload="metadata" style="margin: 20px auto; border-radius: 8px; display: block;">
       <source src="assets/videos/nexly/nexly_ic.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -141,7 +141,7 @@ Nexly is a platform that automates financial statement review. As co-founder and
       </div>
     </div>
     
-    <video width="80%" controls preload="none" style="margin: 20px auto; border-radius: 8px; display: block;">
+    <video width="80%" controls preload="metadata" style="margin: 20px auto; border-radius: 8px; display: block;">
       <source src="assets/videos/nexly/nexly_ai_chat.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
