@@ -5,10 +5,10 @@
   duration_short: "1 yr+"
   type: "Full-time"
   logo: "/assets/images/projects/nexly/nexly_logo_full.png"
-  status: "Active Development"
+  status: "Development Paused"
   website: "https://nexly.tech/"
   is_current_project: true
-  technologies: ["Python", "FastAPI", "LangChain", "LangGraph", "PyTorch", "Firebase", "MS Azure", "Google GCP", "Docker"]
+  technologies: ["Python", "FastAPI", "LangChain", "Firebase", "MS Azure", "Google GCP", "Docker"]
   tech_highlights: ["Python", "FastAPI", "LangChain", "Firebase", "MS Azure", "Google GCP"]
   highlights:
     - title: "Dual-Architecture Backend System"
