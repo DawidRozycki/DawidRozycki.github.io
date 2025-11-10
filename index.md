@@ -46,11 +46,7 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
       <div class="technologies">
         <strong>Technologies:</strong>
         {% for tech in nexly.technologies %}
-        {% if tech == "Python" or tech == "AI" or tech == "MS Azure" or tech == "Google GCP" or tech == "Firebase" %}
         <span class="tech-tag tech-tag-highlight">{{ tech }}</span>
-        {% else %}
-        <span class="tech-tag">{{ tech }}</span>
-        {% endif %}
         {% endfor %}
       </div>
       
