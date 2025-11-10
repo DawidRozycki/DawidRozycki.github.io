@@ -50,11 +50,14 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
         {% endfor %}
       </div>
       
-      <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
-        <strong>🔗 Links:</strong>
-        <div style="margin-top: 10px; display: flex; gap: 15px; flex-wrap: wrap;">
-          <a href="/nexly" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">📖 Learn More</a>
-          <a href="{{ nexly.website }}" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">🌐 Visit Nexly</a>
+      <div style="margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #e74c3c;">
+        <div style="margin-bottom: 15px;">
+          <strong style="font-size: 1.1em;">📚 Want to see how I built this?</strong>
+          <p style="margin: 5px 0 0 0; color: #7f8c8d; font-size: 0.95em;">Deep dive into technical challenges, architecture decisions, and real-world solutions</p>
+        </div>
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center;">
+          <a href="/nexly" style="display: inline-block; padding: 12px 24px; background: #e74c3c; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1.05em; box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3); transition: all 0.3s;">📖 Read Full Case Study →</a>
+          <a href="{{ nexly.website }}" style="display: inline-block; padding: 10px 20px; background: white; color: #3498db; text-decoration: none; border-radius: 6px; font-weight: 500; border: 2px solid #3498db;">🔗 Visit Nexly</a>
         </div>
       </div>
     </div>
@@ -104,11 +107,14 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
         {% endfor %}
       </div>
       
-      <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
-        <strong>🔗 Links:</strong>
-        <div style="margin-top: 10px; display: flex; gap: 15px; flex-wrap: wrap;">
-          <a href="/nextideas" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">📖 Learn More</a>
-          <a href="{{ nextideas.website }}" target="_blank" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">🌐 Visit NextIdeas.app</a>
+      <div style="margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #9b59b6;">
+        <div style="margin-bottom: 15px;">
+          <strong style="font-size: 1.1em;">💡 See how it works</strong>
+          <p style="margin: 5px 0 0 0; color: #7f8c8d; font-size: 0.95em;">Technical breakdown of AI integration, domain checking, and affiliate monetization</p>
+        </div>
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center;">
+          <a href="/nextideas" style="display: inline-block; padding: 12px 24px; background: #9b59b6; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1.05em; box-shadow: 0 2px 8px rgba(155, 89, 182, 0.3); transition: all 0.3s;">📖 Read Full Case Study →</a>
+          <a href="{{ nextideas.website }}" target="_blank" style="display: inline-block; padding: 10px 20px; background: white; color: #3498db; text-decoration: none; border-radius: 6px; font-weight: 500; border: 2px solid #3498db;">🌐 Try NextIdeas.app</a>
         </div>
       </div>
     </div>
