@@ -57,7 +57,8 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
         </div>
         <div style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center;">
           <a href="/nexly" style="display: inline-block; padding: 12px 24px; background: #e74c3c; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1.05em; box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3); transition: all 0.3s;">📖 Read Full Case Study →</a>
-          <a href="{{ nexly.website }}" style="display: inline-block; padding: 10px 20px; background: white; color: #3498db; text-decoration: none; border-radius: 6px; font-weight: 500; border: 2px solid #3498db;">🔗 Visit Nexly</a>
+          <a href="{{ nexly.website }}" style="display: inline-block; padding: 10px 20px; background: white; color: #3498db; text-decoration: none; border-radius: 6px; font-weight: 500; border: 2px solid #3498db;">🌐 Visit Nexly</a>
+          <!-- Archive link (if nexly.tech goes down): https://web.archive.org/web/20251110150327/https://nexly.tech/ -->
         </div>
       </div>
     </div>
