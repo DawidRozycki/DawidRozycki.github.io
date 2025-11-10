@@ -161,10 +161,13 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
         </div>
       </div>
       
-      <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
-        <strong>🔗 Links:</strong>
-        <div style="margin-top: 10px; display: flex; gap: 15px; flex-wrap: wrap;">
-          <a href="/cv" style="display: inline-block; padding: 8px 16px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">📖 View Full CV</a>
+      <div style="margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #27ae60;">
+        <div style="margin-bottom: 15px;">
+          <strong style="font-size: 1.1em;">💼 Explore my full professional journey</strong>
+          <p style="margin: 5px 0 0 0; color: #7f8c8d; font-size: 0.95em;">7+ years across fintech, banking, and energy sectors with detailed role descriptions and achievements</p>
+        </div>
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center;">
+          <a href="/cv" style="display: inline-block; padding: 12px 24px; background: #27ae60; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1.05em; box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3); transition: all 0.3s;">📄 View Complete CV →</a>
         </div>
       </div>
     </div>
