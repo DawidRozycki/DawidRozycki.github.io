@@ -9,12 +9,6 @@ title: Nexly
 
 # {{ nexly.company }} - {{ nexly.position }}
 
-<div style="text-align: center; margin: 20px 0;">
-  <a href="https://github.com/davidRozycki">
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=davidRozycki&theme=default" alt="GitHub Profile Details" style="max-width: 100%; height: auto;">
-  </a>
-</div>
-
 **Development Activity:**
 - 🚀 **300+ contributions** in 2024
 - 🚀 **500+ contributions** in 2025
