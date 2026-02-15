@@ -15,6 +15,9 @@ theme: jekyll-theme-minimal
 github_username: DawidRozycki
 linkedin_username: david-rozycki-1766215a
 
+# Google Analytics
+google_analytics: G-T0B4DPD1KT
+
 # Collections
 collections:
   projects:
