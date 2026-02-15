@@ -700,35 +700,6 @@ video {
       margin-left: auto;
     }
   }
-    }
-
-    .skill-level {
-      padding: 2px 8px;
-      border-radius: 10px;
-      font-size: 0.8em;
-      font-weight: 500;
-
-      &.level-expert {
-        background: #27ae60;
-        color: white;
-      }
-
-      &.level-advanced {
-        background: #3498db;
-        color: white;
-      }
-
-      &.level-intermediate {
-        background: #f39c12;
-        color: white;
-      }
-    }
-
-    .skill-years {
-      font-size: 0.8em;
-      color: #7f8c8d;
-    }
-  }
 }
 
 .notable-projects-grid {
