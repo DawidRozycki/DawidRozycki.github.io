@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
 
 {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
     <div class="wrapper">
@@ -17,7 +18,7 @@
 
 <div class="github-stats-badge">
   <a href="https://github.com/{{ site.data.personal.github_username }}">
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={{ site.data.personal.github_username }}&theme=default" alt="GitHub Profile Details" style="max-width: 100%; height: auto;">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={{ site.data.personal.github_username }}&amp;theme=default" alt="GitHub Profile Details" style="max-width: 100%; height: auto;">
   </a>
 </div>
 
@@ -42,10 +43,13 @@
               <div class="job-meta">
                 <span class="duration">{{ project.duration }}</span>
                 {% if project.status %}
-                <span class="type" style="
-                  {% if project.status == 'Active Development' %}background: #f39c12;{% elsif project.status == 'Live' %}background: #27ae60;{% endif %}
-                  color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.9em;
-                ">{{ project.status }}</span>
+                {% if project.status == 'Active Development' %}
+                <span class="type" style="background: #f39c12; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.9em;">{{ project.status }}</span>
+                {% elsif project.status == 'Live' %}
+                <span class="type" style="background: #27ae60; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.9em;">{{ project.status }}</span>
+                {% else %}
+                <span class="type" style="background: #95a5a6; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.9em;">{{ project.status }}</span>
+                {% endif %}
                 {% endif %}
               </div>
             </div>
@@ -200,12 +204,15 @@
         </div>
       </div>
       {% endfor %}
-      
-      {% if site.data.education.certifications %}
-      <div class="experience-section">
-        <h2>Certificates</h2>
-        {% for cert in site.data.education.certifications %}
-        <div class="experience-card">
+    </div>
+    {% endif %}
+
+    <!-- Certifications Section -->
+    {% if site.data.education.certifications %}
+    <div class="experience-section">
+      <h2>Certificates</h2>
+      {% for cert in site.data.education.certifications %}
+      <div class="experience-card">
         <div class="experience-header">
           <div class="company-info">
             {% if cert.logo %}
@@ -286,6 +293,6 @@
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   </body>
 </html>
