@@ -660,14 +660,14 @@ video {
   }
 
   .skill-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
     align-items: center;
     gap: 10px;
 
     .skill-name {
       font-weight: 500;
       color: #2c3e50;
-      flex: 0 0 auto;
     }
 
     .skill-level {
@@ -675,7 +675,6 @@ video {
       border-radius: 10px;
       font-size: 0.8em;
       font-weight: 500;
-      flex: 0 0 auto;
 
       &.level-expert {
         background: #27ae60;
@@ -696,8 +695,7 @@ video {
     .skill-years {
       font-size: 0.8em;
       color: #7f8c8d;
-      flex: 0 0 auto;
-      margin-left: auto;
+      text-align: right;
     }
   }
 }
