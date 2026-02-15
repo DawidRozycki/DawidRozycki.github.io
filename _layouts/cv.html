@@ -199,10 +199,15 @@
       {% endfor %}
       
       {% if site.data.education.certifications %}
-      {% for cert in site.data.education.certifications %}
-      <div class="experience-card">
+      <div class="experience-section">
+        <h2>Certificates</h2>
+        {% for cert in site.data.education.certifications %}
+        <div class="experience-card">
         <div class="experience-header">
           <div class="company-info">
+            {% if cert.logo %}
+            <img src="{{ cert.logo }}" alt="{{ cert.name }} logo" class="company-logo" style="max-height: 60px; object-fit: contain;">
+            {% endif %}
             <div class="company-details">
               <h3 class="position-title">{{ cert.name }}</h3>
               <h4 class="company-name">{{ cert.issuer }}</h4>
@@ -217,7 +222,6 @@
         </div>
       </div>
       {% endfor %}
-      {% endif %}
     </div>
     {% endif %}
 

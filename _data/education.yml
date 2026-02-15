@@ -29,7 +29,9 @@ certifications:
   - name: "Enabling Innovation with Data Science"
     issuer: "ETH Zurich"
     date: "February 2026"
+    logo: "assets/images/cv/education/eth_logo.png"
 
   - name: "CFA Level 1"
     issuer: "CFA Institute"
     date: "December 2013"
+    logo: "assets/images/cv/education/cfa_logo.png"
