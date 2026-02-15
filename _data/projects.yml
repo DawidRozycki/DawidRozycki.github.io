@@ -2,6 +2,13 @@
 # Projects marked with is_current_project: true will be displayed in the Current Projects section
 
 notable:
+  - name: "Executive Risk Reporting Framework"
+    company: "Credit Suisse"
+    description: "Automated RMarkdown reporting system with full IT infrastructure"
+    technologies: [ "R", "RMarkdown", "DevOps", "Data Visualization" ]
+    impact: "Streamlined senior leadership reporting, improved decision-making speed and accuracy"
+    year: "2022-2024"
+
   - name: "IBOR Transition Risk Calculator"
     company: "Standard Chartered Bank"
     description: "Sophisticated risk measurement system for Risk-Free Rate products during industry-wide LIBOR transition"
@@ -22,10 +29,3 @@ notable:
     technologies: ["Python", "Operations Research", "Energy Trading Analytics"]
     impact: "Generated savings of tens to hundreds of thousands PLN annually"
     year: "2017-2018"
-
-  - name: "Executive Risk Reporting Framework"
-    company: "Credit Suisse"
-    description: "Automated RMarkdown reporting system with full IT infrastructure"
-    technologies: ["R", "RMarkdown", "DevOps", "Data Visualization"]
-    impact: "Streamlined senior leadership reporting, improved decision-making speed and accuracy"
-    year: "2022-2024"
