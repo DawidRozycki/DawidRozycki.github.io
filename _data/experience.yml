@@ -1,7 +1,7 @@
 - company: "Nexly"
-  position: "Co-Founder & Backend Developer"
+  position: "Technical Co-Founder"
   location: "Zurich, Switzerland"
-  duration: "September 2024 - October 2025"
+  duration: "from September 2024"
   duration_short: "1 yr"
   type: "Full-time"
   logo: "/assets/images/projects/nexly/nexly_logo_full.png"
@@ -29,7 +29,7 @@
 
 - company: "NextIdeas.app"
   position: "Solo-Founder"
-  location: "Remote"
+  location: "Zurich, Switzerland"
   duration: "September 2025 - Present"
   duration_short: "3 months+"
   type: "Full-time"
@@ -48,7 +48,7 @@
       description: "Successfully launched and operational, serving users with a robust and scalable platform"
 
 - company: "Credit Suisse"
-  position: "Data Analyst / Data Scientist"
+  position: "Data Scientist / Data Analyst"
   location: "Zurich, Switzerland"
   duration: "April 2022 - August 2024"
   duration_short: "2 yrs 5 mos"
@@ -66,7 +66,7 @@
       description: "Proactively identified emerging credit risk concentrations across industries, geographic regions, and portfolio segments, directly supporting strategic risk management decisions"
 
 - company: "Standard Chartered Bank"
-  position: "Data Science, Behavioral Modeling"
+  position: "Data Scientist, Behavioral Modeling"
   location: "Warsaw, Poland"
   duration: "May 2020 - December 2021"
   duration_short: "1 yr 8 mos"

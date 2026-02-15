@@ -26,7 +26,10 @@ degrees:
       - "High grade-point average for full 7 semester engineering course"
 
 certifications:
+  - name: "Enabling Innovation with Data Science"
+    issuer: "ETH Zurich"
+    date: "February 2026"
+
   - name: "CFA Level 1"
     issuer: "CFA Institute"
     date: "December 2013"
-    status: "Passed"
