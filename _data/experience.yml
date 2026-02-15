@@ -5,7 +5,6 @@
   duration_short: "1 yr"
   type: "Full-time"
   logo: "/assets/images/projects/nexly/nexly_logo_full.png"
-  status: "Development Paused"
   website: "https://nexly.tech/"
   # Archive link (if website goes down): https://web.archive.org/web/20251110150327/https://nexly.tech/
   is_current_project: true

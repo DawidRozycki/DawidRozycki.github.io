@@ -662,12 +662,44 @@ video {
   .skill-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 10px;
 
     .skill-name {
       font-weight: 500;
       color: #2c3e50;
+      flex: 0 0 auto;
+    }
+
+    .skill-level {
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.8em;
+      font-weight: 500;
+      flex: 0 0 auto;
+
+      &.level-expert {
+        background: #27ae60;
+        color: white;
+      }
+
+      &.level-advanced {
+        background: #3498db;
+        color: white;
+      }
+
+      &.level-intermediate {
+        background: #f39c12;
+        color: white;
+      }
+    }
+
+    .skill-years {
+      font-size: 0.8em;
+      color: #7f8c8d;
+      flex: 0 0 auto;
+      margin-left: auto;
+    }
+  }
     }
 
     .skill-level {
