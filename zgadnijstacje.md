@@ -290,7 +290,7 @@ Leveraged Leaflet and OpenStreetMap to:
 Try Metro Warszawskie and test your knowledge of Warsaw's metro system!
 
 **Play now:** https://zgadnijstacje.pl  
-**GitHub:** [Project Repository](https://github.com/dr-next357)
+**Join the community:** [Discord Server](https://discord.gg/EpmN8MDDNr)
 
 ---
 
