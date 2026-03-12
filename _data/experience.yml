@@ -46,6 +46,28 @@
     - title: "Production Launch"
       description: "Successfully launched and operational, serving users with a robust and scalable platform"
 
+- company: "Metro Warszawskie"
+  position: "Solo Developer"
+  location: "Remote"
+  duration: "2024 - Present"
+  duration_short: "Recent"
+  type: "Side Project"
+  logo: "/assets/images/projects/zgadnijstacje/logo.png"
+  status: "Live"
+  website: "https://zgadnijstacje.pl"
+  is_current_project: true
+  technologies: ["React", "Vite", "Leaflet", "OpenStreetMap", "JavaScript"]
+  tech_highlights: ["React", "Vite", "Leaflet"]
+  highlights:
+    - title: "Interactive Map Gameplay"
+      description: "Built real-time map-based station discovery using Leaflet and OpenStreetMap, providing visual feedback as players discover Warsaw metro stations"
+    - title: "Fuzzy Matching with Polish Characters"
+      description: "Implemented intelligent input matching that normalizes Polish diacritical marks and handles typos, making the game forgiving and accessible"
+    - title: "Bilingual Support"
+      description: "Full Polish and English interface supporting both language inputs for station names, accessible to locals and international visitors"
+    - title: "Gamification & Social Sharing"
+      description: "Integrated confetti celebrations, dynamic scoring system, and social media sharing (Twitter/X, Facebook) to encourage engagement and competition"
+
 - company: "Credit Suisse"
   position: "Data Scientist / Data Analyst"
   location: "Zurich, Switzerland"

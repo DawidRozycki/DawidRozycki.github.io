@@ -55,6 +55,13 @@ Energy Market Analytics, Weather Sensitivity Models, Portfolio Optimization, Reg
 **Outcome:** Successfully launched and operational  
 [Visit NextIdeas.app](https://nextideas.app)
 
+### Metro Warszawskie (zgadnijstacje.pl)
+**Description:** Interactive Warsaw Metro station guessing game with real-time map visualization  
+**Technologies:** React, Vite, Leaflet, OpenStreetMap, JavaScript  
+**Role:** Solo developer  
+**Outcome:** Live and engaging with fuzzy matching and bilingual support  
+[Play Metro Warszawskie](https://zgadnijstacje.pl)
+
 ### Nexly Platform
 **Description:** Innovative platform leveraging advanced analytics and AI technologies  
 **Technologies:** Full-stack development with data science integration  

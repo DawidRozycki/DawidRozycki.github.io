@@ -121,6 +121,60 @@ I'm a backend developer and entrepreneur passionate about building scalable solu
     </div>
   </div>
   
+  {% assign zgadnijstacje = site.data.experience | where: "company", "Metro Warszawskie" | first %}
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="company-info">
+        <img src="{{ zgadnijstacje.logo }}" alt="{{ zgadnijstacje.company }} logo" class="company-logo">
+        <div class="company-details">
+          <h3 class="position-title">{{ zgadnijstacje.position }}</h3>
+          <h4 class="company-name">{{ zgadnijstacje.company }}</h4>
+          <div class="job-meta">
+            <span class="duration">{{ zgadnijstacje.duration }}</span>
+            {% if zgadnijstacje.status %}
+            <span class="type" style="background: #27ae60; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.9em;">{{ zgadnijstacje.status }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <img src="assets/images/projects/zgadnijstacje/screenshot.png" alt="Metro Warszawskie Gameplay" style="width: 60%; margin: 20px auto; border-radius: 8px; display: block;">
+    
+    <div class="experience-content">
+      <div class="highlights">
+        {% for highlight in zgadnijstacje.highlights %}
+        <div class="highlight-item">
+          <h5 class="highlight-title">{{ highlight.title }}</h5>
+          <p class="highlight-description">{{ highlight.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      
+      <div class="technologies">
+        <strong>Technologies:</strong>
+        {% for tech in zgadnijstacje.technologies %}
+        {% if zgadnijstacje.tech_highlights contains tech %}
+        <span class="tech-tag tech-tag-highlight">{{ tech }}</span>
+        {% else %}
+        <span class="tech-tag">{{ tech }}</span>
+        {% endif %}
+        {% endfor %}
+      </div>
+      
+      <div style="margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #3498db;">
+        <div style="margin-bottom: 15px;">
+          <strong style="font-size: 1.1em;">🎮 Test your metro knowledge</strong>
+          <p style="margin: 5px 0 0 0; color: #7f8c8d; font-size: 0.95em;">Interactive map-based guessing game with fuzzy matching and bilingual support</p>
+        </div>
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center;">
+          <a href="/zgadnijstacje" style="display: inline-block; padding: 12px 24px; background: #3498db; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1.05em; box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3); transition: all 0.3s;">📖 Read Full Case Study →</a>
+          <a href="{{ zgadnijstacje.website }}" target="_blank" style="display: inline-block; padding: 10px 20px; background: white; color: #3498db; text-decoration: none; border-radius: 6px; font-weight: 500; border: 2px solid #3498db;">🎮 Play Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <div class="experience-card">
     <div class="experience-header">
       <div class="company-info">
