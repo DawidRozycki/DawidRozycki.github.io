@@ -5,11 +5,9 @@ title: Home
 
 # 👋 Hey!
 
-I'm a backend developer and entrepreneur passionate about building scalable solutions and innovative products.
+I'm a data scientist and entrepreneur passionate about building scalable solutions and innovative products.
 
 <section class="experience-section">
-  <h2>Current Projects</h2>
-  
   {% assign nexly = site.data.experience | where: "company", "Nexly" | first %}
   <div class="experience-card">
     <div class="experience-header">
